@@ -1,0 +1,27 @@
+{
+  "sites": [
+    ["https://www.elle.de/", "elle", false],
+    ["https://www.vogue.de/", "vogue", false],
+    ["https://www.fuersie.de/", "fuer sie", false],
+    ["https://www.bleibgesund.de/", "bleib gesund", false],
+    ["https://www.cosmopolitan.de/", "cosmopolitan", true],
+    ["https://www.brigitte.de/", "brigitte", false],
+    ["https://www.jolie.de/", "jolie", false],
+    ["https://www.meine-familie-und-ich.de/", "meine Familie und ich", false],
+    ["https://shop.mango.com/de/damen/highlights/neu_d18713172", "mango", true],
+    ["https://www.only.com/de/de/home/", "only", true],
+    ["https://www.newyorker.de/products/#/?gender=FEMALE", "newyorker", true],
+    ["https://www.jackjones.com/de/de/jj/neuheiten/", "jack and jones", true],
+    ["https://www.scotch-soda.com/de/de/home?utm_campaign=ao_de_search_googleads&br=1", "scotch", true],
+    ["https://www.primark.com/de", "primark", false],
+    ["https://www.levi.com/DE/de_DE/search/501?camp=PaidSearch_DR_Levis_DE_DE_GOO_Brand-Pure_Non-Gender_Exact", "levi", true],
+    ["https://www.veromoda.com/de/de/home/", "veromoda", true],
+    ["https://www.superdry.de/", "superdry", false],
+    ["https://www.tom-tailor.de/damen-startseite", "tom tailor", false],
+    ["https://www.gap.eu/gap/outlet/shop-all-outlet/", "gap", false]
+  ],
+  "run if folder exists": true,
+  "delete failed requests": true,
+  "only subdomains": true,
+  "browser": "chrome"
+}
