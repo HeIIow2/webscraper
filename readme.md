@@ -14,3 +14,21 @@ How to use the Tool
    3. put it (if needed in the autostart)
 
 If you run into any issues, open an issue in this github page or write me a mail: Lars.Noack@outlook.de
+
+Analysing the data
+---
+
+I use analyze the data from following sites (every other site is even more crap):
+- bleib gesund
+- cosmopolitan
+- brigitte
+- elle
+- jolie
+
+# data preparation for cluster analysis
+
+## read raw data
+
+The data is saved in a folder, where every subfolder is named a date. In the subfolder there are every data from a day. For every available magazine one json file.
+
+I am only reading the data of the above mentioned magazines. I am returning this number with a custom iterator. Every iteration it returns a dictionary, where the keys are the names of the magazines and the value being the according content. It also returns the date in utc.
