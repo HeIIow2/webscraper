@@ -16,6 +16,7 @@ class Data:
         for date_str in os.listdir(DATA_PATH):
             utc_time = datetime.strptime(date_str, "%m.%d.%Y")
             self.dates.append(utc_time)
+        self.dates.sort()
 
         self.cursor = 0
 

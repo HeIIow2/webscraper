@@ -32,3 +32,7 @@ I use analyze the data from following sites (every other site is even more crap)
 The data is saved in a folder, where every subfolder is named a date. In the subfolder there are every data from a day. For every available magazine one json file.
 
 I am only reading the data of the above mentioned magazines. I am returning this number with a custom iterator. Every iteration it returns a dictionary, where the keys are the names of the magazines and the value being the according content. It also returns the date in utc.
+
+## keyword analysis
+
+I am using [yake](https://pypi.org/project/yake/) to analyze 20 keywords from the body and 1 from the header, and returning it as sorted list, by importance.
