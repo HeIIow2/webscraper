@@ -19,7 +19,11 @@ if __name__ == "__main__":
     i = 0
     for date, data in data_iter:
         print(date)
-        print(extract_keywords.get_keywords(magazines=MAGAZINES, data=data))
+        keywords = extract_keywords.get_keywords(magazines=MAGAZINES, data=data)
+        for magazine in keywords:
+            print(f"-------------{magazine}--------------")
+            for key in keywords[magazine]:
+                print(key)
 
 
         i += 1
