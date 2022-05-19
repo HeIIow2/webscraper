@@ -3,14 +3,11 @@ import os.path
 from datetime import datetime
 import json
 
-DATA_PATH = "data"
-
-if not os.path.exists(DATA_PATH):
-    raise Exception(f"cant find data under {DATA_PATH}")
-
 
 class Data:
-    def __init__(self, magazines: list):
+    def __init__(self, magazines: list, DATA_PATH="./data"):
+        if not os.path.exists(DATA_PATH):
+            raise Exception(f"cant find data under {DATA_PATH}")
         self.magazines = magazines
         self.dates = []
         for date_str in os.listdir(DATA_PATH):
@@ -19,6 +16,7 @@ class Data:
         self.dates.sort()
 
         self.cursor = 0
+        self.DATA_PATH = DATA_PATH
 
     def __iter__(self):
         return self
@@ -28,7 +26,7 @@ class Data:
             raise StopIteration
 
         data = {}
-        current_path = os.path.join(DATA_PATH, self.dates[self.cursor].strftime("%m.%d.%Y"))
+        current_path = os.path.join(self.DATA_PATH, self.dates[self.cursor].strftime("%m.%d.%Y"))
         for magazine in self.magazines:
             data[magazine] = []
             path = os.path.join(current_path, magazine+".json")

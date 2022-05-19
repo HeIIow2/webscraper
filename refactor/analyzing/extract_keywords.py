@@ -1,16 +1,10 @@
 import yake
 from urllib.parse import urlparse
 
-HEADER_IMPORTANCE_FACTOR = 0.5
-
-MIN_TEXT_LEN = 10
-MIN_TEXT_HEADER_RATIO = 2
-
-
 kw_extractor = yake.KeywordExtractor(lan="de", top=10)
 
 
-def get_keywords(magazines: list, data: dict):
+def get_keywords(magazines: list, data: dict, keywords_per_article=10, header_importance_factor=2, min_text_header_ratio=2) -> dict:
     keyword_data = {}
     for magazine in magazines:
         current_data = data[magazine]
@@ -44,15 +38,16 @@ def get_keywords(magazines: list, data: dict):
             text_len = len(article_content['text'])
             header_len = sum([len(elem) for elem in article_content['headers']])
             header_text_ration = text_len/header_len
-            if header_text_ration < MIN_TEXT_HEADER_RATIO:
+            if header_text_ration < min_text_header_ratio:
                 continue
 
             if "headers" in article_content:
-                article_keywords.extend(kw_extractor.extract_keywords(" ".join(article_content['headers'])))
+                for keyword in kw_extractor.extract_keywords(" ".join(article_content['headers'])):
+                    article_keywords.append((keyword[0], keyword[1] * header_importance_factor))
 
             article_keywords.extend(kw_extractor.extract_keywords(article_content['text']))
             article_keywords.sort(key=lambda x: x[1])
-            temp_keywords.append(article_keywords)
+            temp_keywords.append(article_keywords[:keywords_per_article])
 
         if len(temp_keywords):
             keyword_data[magazine] = temp_keywords
