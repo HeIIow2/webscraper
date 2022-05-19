@@ -35,8 +35,11 @@ def get_keywords(magazines: list, data: dict, keywords_per_article=10, header_im
             article_content = article['content']
             if len(article_content['text']) <= 0:
                 continue
+
             text_len = len(article_content['text'])
             header_len = sum([len(elem) for elem in article_content['headers']])
+            if len(article_content['headers']) <= 0:
+                header_len = 1
             header_text_ration = text_len/header_len
             if header_text_ration < min_text_header_ratio:
                 continue

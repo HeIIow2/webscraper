@@ -48,4 +48,5 @@ Due to the headers being less accurate, because yake can only extract keywords f
 ### filter out "index site"
 
 There are some sites, just linking to other articles. To filter those out, I count the number of chars in the text and divide those with the number of chars in all headers. If this value is greater than `MIN_TEXT_HEADER_RATIO = 2`, then it is a real article.
-`
+
+## compute the edge weights
