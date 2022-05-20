@@ -34,7 +34,7 @@ if __name__ == "__main__":
     data_iter = iter(read_data.Data(MAGAZINES, DATA_PATH=DATA_PATH))
     keyword_buffer = []
 
-    timeout = -1
+    timeout = 5
     for i, (date, data) in enumerate(data_iter):
         print(f"-------------{date}--------------")
         print("extracting keywords")
@@ -56,5 +56,12 @@ if __name__ == "__main__":
 
         if i > timeout != -1:
             break
+
+    print("saving keywords")
+    with open(os.path.join(ANALYZED_PATH, "keywords.json"), "r", encoding="utf-8") as f:
+        current_keywords = json.load(f)
+    current_keywords.extend(keyword_buffer)
+    with open(os.path.join(ANALYZED_PATH, "keywords.json"), "w", encoding="utf-8") as f:
+        json.dump(current_keywords, f)
 
     compute_edges.finished(GRAPH_PATH)

@@ -4,25 +4,21 @@ import os.path
 class Node:
     def __init__(self, name: str, weight=1.0):
         self.name = name
-        self.frequency = weight
 
         self.connections = {}
-
-    def add_frequency(self, weight=1.0):
-        self.frequency += weight
+        self.connections_frequency = {}
 
     def add_connections(self, connections_list: list):
-        # connections_list = list(dict.fromkeys(connections_list))
         for connection, weight in connections_list:
-            if connection in self.connections:
-                self.connections[connection] += weight
-            else:
-                self.connections[connection] = weight
+            if connection not in self.connections:
+                self.connections[connection] = 0
+                self.connections_frequency[connection] = 0
+                
+            self.connections[connection] += weight
+            self.connections_frequency[connection] += 1
+                
 
     def get_csv(self):
-        if self.frequency != self.connections[self.name]:
-            print(f"FUCK {self.frequency} {self.connections[self.name]}")
-
         csv_strings = []
 
         self.connections = dict(sorted(self.connections.items(), key=lambda item: item[1], reverse=True))
@@ -43,16 +39,11 @@ class Magazins:
         for label, weight in label_list:
             weight = 1.0 - weight
 
-            # for the sake of having a complete frequency list
-            if label in self.label_frequencies:
-                self.label_frequencies[label] += 1
-            else:
-                self.label_frequencies[label] = 1
-
-            if label in self.labels:
-                self.labels[label].add_frequency(weight=weight)
-            else:
+            if label not in self.label_frequencies:
+                self.label_frequencies[label] = 0
                 self.labels[label] = Node(label, weight=weight)
+            
+            self.label_frequencies[label] += 1             
             self.labels[label].add_connections(label_list)
 
     def dump_csv(self, path: str):
@@ -90,8 +81,8 @@ class Magazins:
                 if possible_label_connection in label_class.connections:
                     possible_label_class = self.labels[possible_label_connection]
 
-                    total1 = label_class.frequency
-                    total2 = possible_label_class.frequency
+                    total1 = self.label_frequencies[label_class.name]
+                    total2 = self.label_frequencies[possible_label_class.name]
                     if total2 > total1:
                         total1, total2 = total2, total1
                     connection = label_class.connections[possible_label_connection]
