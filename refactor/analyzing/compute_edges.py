@@ -1,4 +1,5 @@
 import os.path
+import pandas as pd
 
 
 class Node:
@@ -17,6 +18,12 @@ class Node:
             self.connections[connection] += weight
             self.connections_frequency[connection] += 1
                 
+
+    def get_connection(self, name):
+        if name in self.connections:
+            return self.connections[name]
+        return 0
+    
 
     def get_csv(self):
         csv_strings = []
@@ -72,6 +79,22 @@ class Magazins:
         with open(os.path.join(path, f"frequency_{self.name}.csv"), "w", encoding="utf-8") as connections_file:
             connections_file.write("\n".join(csv_strings))
 
+        matrix = pd.DataFrame(index=label_index, columns=label_index)
+        for i in label_index:
+            for j in label_index:
+                class_i = self.labels[i]
+                class_j = self.labels[j]
+                total1 = self.label_frequencies[class_i.name]
+                total2 = self.label_frequencies[class_j.name]
+                if total2 > total1:
+                    total1, total2 = total2, total1
+                connection = class_i.get_connection(j)
+                factor = float(total1) / float(total2)
+                raw_weight = connection * factor
+                weight = raw_weight / total1
+                matrix.at[i, j] = weight
+        matrix.to_csv(os.path.join(path, f"matrix_{self.name}.csv"))
+        """
         graph_strings.append(f",{', '.join(label_index)}")
         for label in label_index:
             next_graph_string = label
@@ -98,6 +121,7 @@ class Magazins:
 
         with open(os.path.join(path, f"matrix_{self.name}.csv"), "w", encoding="utf-8") as graph_file:
             graph_file.write("\n".join(graph_strings))
+        """
 
 
 magazin_map = {
