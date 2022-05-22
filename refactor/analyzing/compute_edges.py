@@ -53,22 +53,15 @@ class Magazins:
             self.label_frequencies[label] += 1             
             self.labels[label].add_connections(label_list)
 
-    def dump_csv(self, path: str):
-        label_frequencies = dict(sorted(self.label_frequencies.items(), key=lambda item: item[1], reverse=True))
+    def dump_csv(self, path: str, item_count=2000):
+        if len(self.label_frequencies) > item_count:
+            item_count = len(self.label_frequencies)
 
-        for key in label_frequencies:
-            new_key = key.replace(",", " ")
-            if label_frequencies[key] > 99:
-                label_frequencies[new_key] = label_frequencies[key]
+        label_frequencies = dict(sorted(self.label_frequencies.items(), key=lambda item: item[1], reverse=True)[:item_count])
 
-        csv_strings = []
-        for label in self.labels:
-            csv_strings.append(self.labels[label].get_csv())
+        frequency = pd.DataFrame(label_frequencies.items(), columns=['label', 'frequency'])
+        frequency.to_csv(os.path.join(path, f"frequency_{self.name}.csv"))
 
-        with open(os.path.join(path, f"adjacency_{self.name}.csv"), "w", encoding="utf-8") as connections_file:
-            connections_file.write("\n".join(csv_strings))
-
-        graph_strings = []
         csv_strings = ["Id, Frequency"]
         label_index = []
         for label_label in list(label_frequencies):
@@ -76,10 +69,8 @@ class Magazins:
                 label_index.append(label_label)
                 csv_strings.append(f"{label_label}, {label_frequencies[label_label]}")
 
-        with open(os.path.join(path, f"frequency_{self.name}.csv"), "w", encoding="utf-8") as connections_file:
-            connections_file.write("\n".join(csv_strings))
-
         matrix = pd.DataFrame(index=label_index, columns=label_index)
+
         for i in label_index:
             for j in label_index:
                 class_i = self.labels[i]
@@ -94,34 +85,7 @@ class Magazins:
                 weight = raw_weight / total1
                 matrix.at[i, j] = weight
         matrix.to_csv(os.path.join(path, f"matrix_{self.name}.csv"))
-        """
-        graph_strings.append(f",{', '.join(label_index)}")
-        for label in label_index:
-            next_graph_string = label
-            label_class = self.labels[label]
 
-            for possible_label_connection in label_index:
-                if possible_label_connection in label_class.connections:
-                    possible_label_class = self.labels[possible_label_connection]
-
-                    total1 = self.label_frequencies[label_class.name]
-                    total2 = self.label_frequencies[possible_label_class.name]
-                    if total2 > total1:
-                        total1, total2 = total2, total1
-                    connection = label_class.connections[possible_label_connection]
-                    factor = float(total1) / float(total2)
-                    raw_weight = connection * factor
-                    weight = raw_weight / total1
-
-                    next_graph_string += f", {weight}"
-                else:
-                    next_graph_string += ", 0"
-
-            graph_strings.append(next_graph_string)
-
-        with open(os.path.join(path, f"matrix_{self.name}.csv"), "w", encoding="utf-8") as graph_file:
-            graph_file.write("\n".join(graph_strings))
-        """
 
 
 magazin_map = {

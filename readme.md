@@ -50,3 +50,23 @@ Due to the headers being less accurate, because yake can only extract keywords f
 There are some sites, just linking to other articles. To filter those out, I count the number of chars in the text and divide those with the number of chars in all headers. If this value is greater than `MIN_TEXT_HEADER_RATIO = 2`, then it is a real article.
 
 ## compute the edge weights
+
+This is the final step of the first part. Here I prepare the data for the clustering. Therefore, I have to create a graph from the data. The nodes represent one extracted keyword from the previous step. The edges represent the similarity between the keywords. The weight of the edge is the number of articles, where the keyword is mentioned.
+
+I have two classes.
+
+### class Node
+
+It contains the name of the keyword, the number of articles for every connected keyword, and the importance. of every connected keyword. If I have an article, I add for every keyword in the according instance of Node for every other keyword a connection and increase the weights accordingly.
+
+### class Magazine
+
+This simply contains the name of the magazine, and the processes of creating and editing the nodes. I am creating one instance for every magazine, and for all magazines.
+
+I am creating a node for every keyword in the according magazine. Then for every article, where the keywords get passed in by main.py, I add connections to according nodes.
+
+At the End I am exporting the graphs as matrices for every magazine instance with [pandas](https://pandas.pydata.org/).
+
+Then I can just import it into Gephi.
+
+# cluster analysis with gephi
