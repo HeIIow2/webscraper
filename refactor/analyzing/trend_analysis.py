@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 import datetime
 
@@ -67,7 +69,10 @@ class Keywords:
             else:
                 self.good_articles += 1
 
-    def retrieve_data(self):
-        print(f"magazine: {self.magazine}; Articles loss: {self.articles_loss} from {self.good_articles} dates")
+    def retrieve_data(self, dump_path: str, date_format: str):
+        print(f"magazine: {self.magazine}; Articles loss: {self.articles_loss} from {self.good_articles} articles")
+        with open(dump_path, "w", encoding="utf-8") as f:
+            json.dump(([elem.strftime(date_format) for elem in self.date_list], self.keyword_frequency), f)
+
         return self.date_list, self.keyword_frequency
 

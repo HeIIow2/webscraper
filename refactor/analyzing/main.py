@@ -7,9 +7,11 @@ import extract_keywords
 import compute_edges
 
 import trend_analysis
+import draw_diagram
 
 RUN_DATA_PREPARATION_FOR_CLUSTERING = False
 ANALYZE_TRENDS = False
+DRAW_DIAGRAM = True
 
 DATA_PATH = "data"
 ANALYZED_PATH = "analyzed"
@@ -29,6 +31,9 @@ KEYWORDS_PER_ARTICLE = 10        # The number of keywords to be extracted from e
 SAVE_FREQUENCY = 10
 RESET_KEYWORDS = False
 DATE_FORMAT = "%d.%m.%Y"
+
+# The number of days, which are summed up per measurement
+SUMMARIZED_DAYS = 7
 
 
 if __name__ == "__main__":
@@ -74,28 +79,35 @@ if __name__ == "__main__":
         exit(0)
 
     # trend analysis
-    print("starting trend analysis")
-    with open(os.path.join(ANALYZED_PATH, "keywords.json"), "r", encoding="utf-8") as f:
-        keywords = json.load(f)
+    if ANALYZE_TRENDS:
+        print("starting trend analysis")
+        with open(os.path.join(ANALYZED_PATH, "keywords.json"), "r", encoding="utf-8") as f:
+            keywords = json.load(f)
 
-    # hier werden alle instanzen der Klasse Keyword (trend_analysis.py) gespeichert, die dem magazin zugeordnet werden
-    processing_map = {}
+        # hier werden alle instanzen der Klasse Keyword (trend_analysis.py) gespeichert, die dem magazin zugeordnet werden
+        processing_map = {}
 
-    for magazine in MAGAZINES:
-        path = os.path.join(ANALYZED_PATH, f"{magazine}_modularity.csv")
-        if not os.path.exists(path):
-            continue
-        processing_map[magazine] = trend_analysis.Keywords(path, magazine)
+        for magazine in MAGAZINES:
+            path = os.path.join(ANALYZED_PATH, f"{magazine}_modularity.csv")
+            if not os.path.exists(path):
+                continue
+            processing_map[magazine] = trend_analysis.Keywords(path, magazine)
 
-    for entry in keywords:
-        magazine = entry["magazin"]
-        if magazine not in processing_map:
-            continue
-        date = datetime.strptime(entry["date"], DATE_FORMAT)
-        keywords = entry["keywords"]
+        for entry in keywords:
+            magazine = entry["magazin"]
+            if magazine not in processing_map:
+                continue
+            date = datetime.strptime(entry["date"], DATE_FORMAT)
+            keywords = entry["keywords"]
 
-        according_class = processing_map[magazine]
-        according_class.add_data(date, keywords)
+            according_class = processing_map[magazine]
+            according_class.add_data(date, keywords)
 
-    for magazine in processing_map:
-        processing_map[magazine].retrieve_data()
+        for magazine in processing_map:
+            dates, data = processing_map[magazine].retrieve_data(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json"), DATE_FORMAT)
+            print(dates)
+            print(data)
+            draw_diagram.draw_diagram(magazine, dates, data, os.path.join(ANALYZED_PATH, f"{magazine}_trend.png"), added_days=SUMMARIZED_DAYS)
+
+    if DRAW_DIAGRAM:
+        pass
