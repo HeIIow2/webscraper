@@ -23,6 +23,7 @@ class Keywords:
         # is a list of all the dates
         # represents the x axis
         self.date_list = []
+        self.total_articles = []
 
         self.keyword_frequency = {}
         for i in range(0, highest_modularity_class + 1):
@@ -46,6 +47,7 @@ class Keywords:
             # und hänge für das jeweilige datum eine frequency an die
             # keyword_frequency an
             self.date_list.append(date)
+            self.total_articles.append(0)
             for key in self.keyword_frequency:
                 self.keyword_frequency[key].append(0)
 
@@ -68,9 +70,13 @@ class Keywords:
                 self.articles_loss += 1
             else:
                 self.good_articles += 1
+                self.total_articles[cursor] += 1
 
     def retrieve_data(self, dump_path: str, date_format: str):
         print(f"magazine: {self.magazine}; Articles loss: {self.articles_loss} from {self.good_articles} articles")
+        for modularity in self.keyword_frequency:
+            for i, value in enumerate(self.keyword_frequency[modularity]):
+                self.keyword_frequency[modularity][i] = float(value) / float(self.total_articles[i])
         with open(dump_path, "w", encoding="utf-8") as f:
             json.dump(([elem.strftime(date_format) for elem in self.date_list], self.keyword_frequency), f)
 

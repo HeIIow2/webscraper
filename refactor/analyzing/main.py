@@ -10,7 +10,7 @@ import trend_analysis
 import draw_diagram
 
 RUN_DATA_PREPARATION_FOR_CLUSTERING = False
-ANALYZE_TRENDS = False
+ANALYZE_TIME = False
 DRAW_DIAGRAM = True
 
 DATA_PATH = "data"
@@ -34,6 +34,7 @@ DATE_FORMAT = "%d.%m.%Y"
 
 # The number of days, which are summed up per measurement
 SUMMARIZED_DAYS = 7
+NUMBER_OF_COMMUNITIES = 5
 
 
 if __name__ == "__main__":
@@ -79,7 +80,7 @@ if __name__ == "__main__":
         exit(0)
 
     # trend analysis
-    if ANALYZE_TRENDS:
+    if ANALYZE_TIME:
         print("starting trend analysis")
         with open(os.path.join(ANALYZED_PATH, "keywords.json"), "r", encoding="utf-8") as f:
             keywords = json.load(f)
@@ -108,6 +109,17 @@ if __name__ == "__main__":
             print(dates)
             print(data)
             draw_diagram.draw_diagram(magazine, dates, data, os.path.join(ANALYZED_PATH, f"{magazine}_trend.png"), added_days=SUMMARIZED_DAYS)
+    else:
+        for magazine in MAGAZINES:
+            if not os.path.exists(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json")):
+                continue
+            with open(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json"), "r") as f:
+                dates, data = json.load(f)
+            print(magazine)
+            print(dates)
+            print(data)
+            draw_diagram.draw_diagram(magazine, dates, data, os.path.join(ANALYZED_PATH, f"{magazine}_trend.png"),
+                                      added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES)
 
     if DRAW_DIAGRAM:
         pass
