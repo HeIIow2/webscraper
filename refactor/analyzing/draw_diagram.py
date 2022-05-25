@@ -41,16 +41,16 @@ def sum_values(values_, added_days=7):
         if i % added_days == 0:
             values.append(0)
         values[-1] += value
-    print([round(value, 1) for value in values])
+    # print([round(value, 1) for value in values])
     return values
 
-def get_label(community: str, values: list):
+def get_label(community, values: list, label_class):
     """
     Returns the label of the given community.
     """
-    return f"{community} :  {round(linear_regression_slope(values), 2)}"
+    return f"{community}-{label_class.get_description(community)} :  {round(linear_regression_slope(values), 2)}"
 
-def draw_diagram(magazine, dates_, values, dump_path: str, added_days=7, number_of_communities=5):
+def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_days=7, number_of_communities=5):
     """
     Draws a diagram of the given values.
     """
@@ -72,7 +72,7 @@ def draw_diagram(magazine, dates_, values, dump_path: str, added_days=7, number_
     ax = plt.gca()
     for community in values:
         color = next(ax._get_lines.prop_cycler)['color']
-        plt.plot(dates, values[community], '-', color=color, label=get_label(community, values[community]))
+        plt.plot(dates, values[community], '-', color=color, label=get_label(community, values[community], label_class))
         plt.plot(dates, linear_regression(values[community]), '--', color=color)
 
     plt.legend()

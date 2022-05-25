@@ -6,6 +6,7 @@ import read_data
 import extract_keywords
 import compute_edges
 
+import label_community
 import trend_analysis
 import draw_diagram
 
@@ -16,6 +17,11 @@ DRAW_DIAGRAM = True
 DATA_PATH = "data"
 ANALYZED_PATH = "analyzed"
 GRAPH_PATH = "graph_matricies"
+FREQUENCY_FILE = "{magazine}_modularity.csv"
+LABEL_FILE = "{magazine}_label.json"
+ANALYZED_TIMES_FILE = "{magazine}_analyzed_time.json"
+DIAGRAM_FILE = "{magazine}_trend.svg"
+MODULARITY_FILE = "{magazine}_modularity.csv"
 
 MAGAZINES = [
     "bleib gesund",
@@ -37,6 +43,10 @@ SUMMARIZED_DAYS = 7
 NUMBER_OF_COMMUNITIES = 5
 
 
+OVERIDE_LABEL_DESCRIPTION = False
+KEYWORDS_IN_DESCRIPTION = 1
+
+
 if __name__ == "__main__":
     if RUN_DATA_PREPARATION_FOR_CLUSTERING:
         if RESET_KEYWORDS:
@@ -56,7 +66,7 @@ if __name__ == "__main__":
                 for key in keywords[magazine]:
                     #print("; ".join([element[0] for element in key]))
                     compute_edges.save_labels(magazine, key)
-                keyword_buffer.append({"date": datetime.strftime(date, DATE_FORMAT), "magazin": magazine, "keywords": keywords[magazine]})
+                keyword_buffer.append({"date": datetime.strftime(date, DATE_FORMAT), "magazine": magazine, "keywords": keywords[magazine]})
 
             if not i % SAVE_FREQUENCY:
                 print("saving keywords")
@@ -95,7 +105,7 @@ if __name__ == "__main__":
             processing_map[magazine] = trend_analysis.Keywords(path, magazine)
 
         for entry in keywords:
-            magazine = entry["magazin"]
+            magazine = entry["magazine"]
             if magazine not in processing_map:
                 continue
             date = datetime.strptime(entry["date"], DATE_FORMAT)
@@ -106,20 +116,20 @@ if __name__ == "__main__":
 
         for magazine in processing_map:
             dates, data = processing_map[magazine].retrieve_data(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json"), DATE_FORMAT)
-            print(dates)
-            print(data)
-            draw_diagram.draw_diagram(magazine, dates, data, os.path.join(ANALYZED_PATH, f"{magazine}_trend.png"), added_days=SUMMARIZED_DAYS)
-    else:
-        for magazine in MAGAZINES:
-            if not os.path.exists(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json")):
-                continue
-            with open(os.path.join(ANALYZED_PATH, f"{magazine}_analyzed_time.json"), "r") as f:
+            with open(os.path.join(ANALYZED_PATH, ANALYZED_TIMES_FILE.format(magazine=magazine)), "r") as f:
                 dates, data = json.load(f)
-            print(magazine)
-            print(dates)
-            print(data)
-            draw_diagram.draw_diagram(magazine, dates, data, os.path.join(ANALYZED_PATH, f"{magazine}_trend.png"),
-                                      added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES)
 
-    if DRAW_DIAGRAM:
-        pass
+
+    if DRAW_DIAGRAM:     
+        for magazine in MAGAZINES:
+            analyzed_times_path = os.path.join(ANALYZED_PATH, ANALYZED_TIMES_FILE.format(magazine=magazine))
+            if not os.path.exists(analyzed_times_path):
+                continue
+                
+            with open(analyzed_times_path, "r") as f:
+                dates, data = json.load(f)
+                
+            magazine_labels = label_community.Label(magazine, GRAPH_PATH=GRAPH_PATH, ANALYZED_PATH=ANALYZED_PATH, modularity_file=MODULARITY_FILE, label_file=LABEL_FILE, override_description=OVERIDE_LABEL_DESCRIPTION, keywords_in_description=KEYWORDS_IN_DESCRIPTION)
+                
+            draw_diagram.draw_diagram(magazine_labels, magazine, dates, data, os.path.join(ANALYZED_PATH, DIAGRAM_FILE.format(magazine=magazine)),
+                                      added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES)
