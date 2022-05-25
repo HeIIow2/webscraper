@@ -70,3 +70,11 @@ At the End I am exporting the graphs as matrices for every magazine instance wit
 Then I can just import it into Gephi.
 
 # cluster analysis with gephi
+
+Because this analysis didn't end up good, I just used the magazine cosmopolitan. To analyze the data, I used [gephi](https://gephi.org/). First of I imported
+matrix_cosmopolitan.csv into gephi. First I used the springload algorithm "forced atlas" on the graph, then I created a graph with the cosmopolitan data. I used the builtin community detection algorithm to find the communities.
+After doing so, I colored the nodes according to the community, and exported the data as a csv file. I named it cosmopolitan_modularity.csv.
+
+# trend analysis
+
+## go through all keywords
