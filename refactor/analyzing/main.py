@@ -34,7 +34,7 @@ if __name__ == "__main__":
     data_iter = iter(read_data.Data(MAGAZINES, DATA_PATH=DATA_PATH))
     keyword_buffer = []
 
-    timeout = -1
+    timeout = 5
     for i, (date, data) in enumerate(data_iter):
         print(f"-------------{date}--------------")
         print("extracting keywords")
