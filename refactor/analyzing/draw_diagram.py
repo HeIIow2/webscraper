@@ -48,9 +48,9 @@ def get_label(community, values: list, label_class):
     """
     Returns the label of the given community.
     """
-    return f"{community}-{label_class.get_description(community)} :  {round(linear_regression_slope(values), 2)}"
+    return f"{community}-{label_class.get_description(community)} :  {round(linear_regression_slope(values), 5)}"
 
-def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_days=7, number_of_communities=5):
+def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_days=7, number_of_communities=5, x_label_tilt=45):
     """
     Draws a diagram of the given values.
     """
@@ -76,7 +76,7 @@ def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_da
         plt.plot(dates, linear_regression(values[community]), '--', color=color)
 
     plt.legend()
-    plt.xticks(rotation=20)
+    plt.xticks(rotation=x_label_tilt)
     plt.tight_layout()
 
     plt.savefig(dump_path)

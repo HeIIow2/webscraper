@@ -50,7 +50,7 @@ class Label:
         keyword_map = {}
         for index, row in self.modularity.iterrows():
             label = row['Label']
-            community = row['modularity_class']
+            community = str(row['modularity_class'])
             
             keyword_map[label] = community
             
@@ -80,5 +80,5 @@ class Label:
             json.dump(self.label_data, f)
     
     def get_description(self, community):
-        return self.label_data[community]["description"]
+        return self.label_data[str(community)]["description"]
         

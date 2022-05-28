@@ -24,12 +24,18 @@ DIAGRAM_FILE = "{magazine}_trend.svg"
 MODULARITY_FILE = "{magazine}_modularity.csv"
 
 MAGAZINES = [
+    "cosmopolitan"
+]
+"""
+MAGAZINES = [
     "bleib gesund",
     "cosmopolitan",
     "brigitte",
     "elle",
     "jolie",
 ]
+"""
+
 HEADER_IMPORTANCE_FACTOR = 1.5  # The higher the number, the less important it is
 MIN_TEXT_HEADER_RATIO = 2       # cars of the text / chars of the header
 KEYWORDS_PER_ARTICLE = 10        # The number of keywords to be extracted from each article
@@ -41,6 +47,7 @@ DATE_FORMAT = "%d.%m.%Y"
 # The number of days, which are summed up per measurement
 SUMMARIZED_DAYS = 7
 NUMBER_OF_COMMUNITIES = 5
+X_LABEL_TILT = 45
 
 
 OVERIDE_LABEL_DESCRIPTION = False
@@ -132,4 +139,4 @@ if __name__ == "__main__":
             magazine_labels = label_community.Label(magazine, GRAPH_PATH=GRAPH_PATH, ANALYZED_PATH=ANALYZED_PATH, modularity_file=MODULARITY_FILE, label_file=LABEL_FILE, override_description=OVERIDE_LABEL_DESCRIPTION, keywords_in_description=KEYWORDS_IN_DESCRIPTION)
                 
             draw_diagram.draw_diagram(magazine_labels, magazine, dates, data, os.path.join(ANALYZED_PATH, DIAGRAM_FILE.format(magazine=magazine)),
-                                      added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES)
+                                      added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES, x_label_tilt=X_LABEL_TILT)
