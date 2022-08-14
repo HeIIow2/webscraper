@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import json
 
+import custom_json
 
 class Label:
     def __init__(self, magazine: str, GRAPH_PATH="graph_matricies", ANALYZED_PATH="analyzed", modularity_file="{magazine}_modularity.csv", frequency_file="frequency_{magazine}.csv", label_file="{magazine}_label.json", override_description=False, keywords_in_description=1):
@@ -77,7 +78,40 @@ class Label:
             
         self.label_data = self.communities
         with open(self.label_path, "w", encoding="utf-8") as f:
-            json.dump(self.label_data, f)
+            print(self.label_path)
+            """
+            b = json.dumps(self.label_data)
+            #b = b.replace('"##<', "").replace('>##"', "")
+            b = fix_json_indent(b, indent=4)
+            f.write(b)
+            """
+            b = custom_json.encode(self.label_data)
+            f.write(b)
+
+        self.hierarchy = []
+
+    def set_slope(self, id, slope: float):
+        if id in self.hierarchy:
+            return
+
+        self.hierarchy.append(id)
+        self.label_data[str(id)]["slope"] = slope
+
+    def commit_slopes(self):
+        new_data = {}
+        for id in self.hierarchy:
+            new_data[id] = self.label_data[id]
+
+        for key in self.label_data:
+            if key not in self.hierarchy:
+                new_data[key] = self.label_data[key]
+
+        with open(self.label_path, "w", encoding="utf-8") as f:
+
+            b = custom_json.encode(new_data)
+            f.write(b)
+
+
     
     def get_description(self, community):
         return self.label_data[str(community)]["description"]

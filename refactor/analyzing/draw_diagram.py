@@ -2,11 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import itertools
 
-def get_most_important_trends(values: dict, number_of_communities=5):
+import custom_json
+
+def get_most_important_trends(label_class, values: dict, number_of_communities=5):
     """
     Returns the most important trends of the given values.
     """
     values = dict(sorted(values.items(), key=lambda x:linear_regression_slope(x[1]), reverse=True))
+    for val in values:
+        label_class.set_slope(val, linear_regression_slope(values[val]))
 
     trends = {}
     for i, community in enumerate(values):
@@ -66,7 +70,7 @@ def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_da
 
     for community in values:
         values[community] = sum_values(values[community], added_days)
-    values = get_most_important_trends(values, number_of_communities)
+    values = get_most_important_trends(label_class, values, number_of_communities)
 
     # draw diagram
     ax = plt.gca()
@@ -81,4 +85,6 @@ def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_da
 
     plt.savefig(dump_path)
     plt.show()
+
+    label_class.commit_slopes()
 
