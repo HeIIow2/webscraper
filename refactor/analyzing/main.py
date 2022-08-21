@@ -21,6 +21,7 @@ FREQUENCY_FILE = "{magazine}_modularity.csv"
 LABEL_FILE = "{magazine}_label.json"
 ANALYZED_TIMES_FILE = "{magazine}_analyzed_time.json"
 DIAGRAM_FILE = "{magazine}_trend_{communities}.svg"
+DIAGRAM_FILE_SLOPES = "{magazine}_trend_{communities}_slopes.svg"
 MODULARITY_FILE = "{magazine}_modularity.csv"
 
 MAGAZINES = [
@@ -46,7 +47,7 @@ DATE_FORMAT = "%d.%m.%Y"
 
 # The number of days, which are summed up per measurement
 SUMMARIZED_DAYS = 7
-NUMBER_OF_COMMUNITIES = 100
+NUMBER_OF_COMMUNITIES = 5
 X_LABEL_TILT = 45
 
 OVERIDE_LABEL_DESCRIPTION = True
@@ -147,5 +148,9 @@ if __name__ == "__main__":
                                                                                            DIAGRAM_FILE.format(
                                                                                                magazine=magazine,
                                                                                                communities=NUMBER_OF_COMMUNITIES)),
+                                      os.path.join(ANALYZED_PATH,
+                                                  DIAGRAM_FILE_SLOPES.format(
+                                                      magazine=magazine,
+                                                      communities=NUMBER_OF_COMMUNITIES)),
                                       added_days=SUMMARIZED_DAYS, number_of_communities=NUMBER_OF_COMMUNITIES,
                                       x_label_tilt=X_LABEL_TILT)

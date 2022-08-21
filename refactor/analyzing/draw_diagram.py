@@ -54,7 +54,13 @@ def get_label(community, values: list, label_class):
     """
     return f"{community}-{label_class.get_description(community)} :  {round(linear_regression_slope(values), 5)}"
 
-def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_days=7, number_of_communities=5, x_label_tilt=45):
+def get_slopes(values, dates):
+    slopes = []
+    for i in range(1, len(values)):
+        slopes.append(values[i-1] - values[i])
+    return slopes, dates[1:]
+
+def draw_diagram(label_class, magazine, dates_, values, dump_path: str, dump_path_slopes: str, added_days=7, number_of_communities=5, x_label_tilt=45):
     """
     Draws a diagram of the given values.
     """
@@ -68,8 +74,12 @@ def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_da
         if i % added_days == 0:
             dates.append(date)
 
+    slopes = {}
+    dates_slopes = dates
+
     for community in values:
         values[community] = sum_values(values[community], added_days)
+        slopes[community], dates_slopes = get_slopes(values[community], dates)
     values = get_most_important_trends(label_class, values, number_of_communities)
 
     # draw diagram
@@ -79,11 +89,29 @@ def draw_diagram(label_class, magazine, dates_, values, dump_path: str, added_da
         plt.plot(dates, values[community], '-', color=color, label=get_label(community, values[community], label_class))
         plt.plot(dates, linear_regression(values[community]), '--', color=color)
 
+
     plt.legend()
     plt.xticks(rotation=x_label_tilt)
     plt.tight_layout()
 
     plt.savefig(dump_path)
+    plt.show()
+
+    # draw diagramm of slopes
+    plt.title(f"{magazine} - slopes")
+    plt.xlabel("Dates")
+    plt.ylabel("changes in occurrences/article_number")
+    ax = plt.gca()
+    for community in values:
+        color = next(ax._get_lines.prop_cycler)['color']
+        plt.plot(dates_slopes, slopes[community], '-', color=color, label=get_label(community, slopes[community], label_class))
+        #plt.plot(dates_slopes, linear_regression(slopes[community]), '--', color=color)
+
+    plt.legend()
+    plt.xticks(rotation=x_label_tilt)
+    plt.tight_layout()
+
+    plt.savefig(dump_path_slopes)
     plt.show()
 
     label_class.commit_slopes()
