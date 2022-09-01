@@ -57,7 +57,7 @@ def get_label(community, values: list, label_class):
 def get_slopes(values, dates):
     slopes = []
     for i in range(1, len(values)):
-        slopes.append(values[i-1] - values[i])
+        slopes.append(values[i] - values[i-1])
     return slopes, dates[1:]
 
 def draw_diagram(label_class, magazine, dates_, values, dump_path: str, dump_path_slopes: str, added_days=7, number_of_communities=5, x_label_tilt=45):
