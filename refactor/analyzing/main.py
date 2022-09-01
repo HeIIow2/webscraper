@@ -47,7 +47,7 @@ DATE_FORMAT = "%d.%m.%Y"
 
 # The number of days, which are summed up per measurement
 SUMMARIZED_DAYS = 7
-NUMBER_OF_COMMUNITIES = 5
+NUMBER_OF_COMMUNITIES = 7
 X_LABEL_TILT = 45
 
 OVERIDE_LABEL_DESCRIPTION = True
