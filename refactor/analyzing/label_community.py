@@ -6,6 +6,8 @@ import custom_json
 
 class Label:
     def __init__(self, magazine: str, GRAPH_PATH="graph_matricies", ANALYZED_PATH="analyzed", modularity_file="{magazine}_modularity.csv", frequency_file="frequency_{magazine}.csv", label_file="{magazine}_label.json", override_description=False, keywords_in_description=1):
+        self.hierarchy = []
+
         self.magazine = magazine
         self.modularity_path = os.path.join(ANALYZED_PATH, modularity_file.format(magazine=magazine))
         self.label_path = os.path.join(ANALYZED_PATH, label_file.format(magazine=magazine))
@@ -87,8 +89,6 @@ class Label:
             """
             b = custom_json.encode(self.label_data)
             f.write(b)
-
-        self.hierarchy = []
 
     def set_slope(self, id, slope: float):
         if id in self.hierarchy:

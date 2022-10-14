@@ -10,6 +10,8 @@ import label_community
 import trend_analysis
 import draw_diagram
 
+# bleib gesund
+
 RUN_DATA_PREPARATION_FOR_CLUSTERING = False
 ANALYZE_TIME = False
 DRAW_DIAGRAM = True
@@ -46,11 +48,11 @@ RESET_KEYWORDS = False
 DATE_FORMAT = "%d.%m.%Y"
 
 # The number of days, which are summed up per measurement
-SUMMARIZED_DAYS = 7
-NUMBER_OF_COMMUNITIES = 7
+SUMMARIZED_DAYS = 1
+NUMBER_OF_COMMUNITIES = 4
 X_LABEL_TILT = 45
 
-OVERIDE_LABEL_DESCRIPTION = True
+OVERIDE_LABEL_DESCRIPTION = False
 KEYWORDS_IN_DESCRIPTION = 1
 
 if __name__ == "__main__":
