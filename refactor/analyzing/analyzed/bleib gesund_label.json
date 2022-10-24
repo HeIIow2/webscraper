@@ -1,0 +1,377 @@
+{
+    "21": {
+        "data": [["anstecken möchten", 133], ["Hygiene schützt", 133], ["Mitmenschen vor Krankheiten", 133], ["Husten oder Niesen", 133], ["richtige Hygiene schützt", 133], ["richtige Hygiene", 133], ["Niesen hält", 119], ["Hygiene-Mythen Folge", 119], ["ausreichender Hygiene schmal", 119], ["Hygiene", 119], ["Netz Folge", 43], ["Wissen im Netz", 43], ["Öko-Barometer Regionale Herkunft", 29], ["aktuelle Öko-Barometer Spitzenreiter", 29], ["Obst und Eier", 29], ["Eier Bio", 29], ["Regionale Herkunft", 29], ["Appetit auf Bio-Lebensmittel", 29], ["Supermarkt Das steckt", 29], ["Spitzenreiter sind Gemüse", 29], ["Hygiene-Mythen Wissen", 14], ["Corona die Hand", 14]],
+        "description": "Ansteckung/Krankheit/Corona",
+        "slope": 0.00129816
+    },
+    "4": {
+        "data": [["Körper", 360], ["Lebensmittel", 323], ["enthalten", 174], ["Obst", 173], ["gesunde Lebensmittel", 173], ["StartseiteErnährungGesund essenGesunde", 173], ["essenGesunde Lebensmittel", 173], ["StartseiteErnährungGesund essenGesunde Lebensmittel", 173], ["gesunde Lebensmittel bevorzugt", 173], ["Herz-Kreislauf", 173], ["Körperfunktionen und Organen", 173], ["System", 173], ["Hormone", 173], ["Körper Laktoseintoleranz", 173], ["komplexes System", 173], ["ausgewogene Ernährung", 172], ["Tipps", 172], ["StartseiteMedizinKörper Stoffwechsel", 172], ["Stoffwechsel", 172], ["Fruktose oder Gluten", 158], ["Ernährung", 151], ["Mengen", 129], ["Körper Laktose", 129], ["Fruktose", 129], ["Laktose", 129], ["Beschwerden", 129], ["Milchzucker", 128], ["Arzt", 128], ["Trampolin", 59], ["Gelenke", 59], ["springen", 59], ["Trampolinspringen macht Spaß", 59], ["schlechte Laune Folge", 59], ["StartseiteFamilieFamilienlebenAb aufs Trampolin", 59], ["hüpfen", 59], ["Trampolin Hüpfen", 59], ["Sprung", 59], ["Menü der Zukunft", 44], ["Nutrition Hub", 22], ["Ernährung in Deutschland", 22], ["Zukunft", 22], ["Menü", 22], ["Klima Utopie", 22], ["Utopie oder Wirklichkeit", 22], ["Laktoseintoleranz", 15]],
+        "description": "gesunde Ernährung",
+        "slope": 0.00118162
+    },
+    "30": {
+        "data": [["Laut Robert Koch-Institut", 90], ["Robert Koch-Institut", 90], ["Laut Robert", 90], ["Bundesbürger über Schlafsto", 90], ["Bett Kopfkissen", 90], ["guten Matratze Tipps", 90], ["guten Matratze Laut", 90], ["Robert Koch-Institut klagen", 90], ["Matratze Laut Robert", 90], ["richtige Bett Kopfkissen", 90]],
+        "description": "schlaf/RKI",
+        "slope": 0.00102579
+    },
+    "32": {
+        "data": [["euren Lebensmittelvorrat", 117], ["essen Folge", 89], ["StartseiteErnährungNachhaltig genießenCheckliste", 59], ["Vorrat an Lebensmitteln", 59], ["Lebensmittelvorrat Im Vorratsschrank", 59], ["Lebensmitteln im Haus", 59], ["Checkliste für euren", 59], ["jenseits von Corona", 59], ["Tipps Besser essen", 58], ["leckeren und gesunden", 31], ["Hähnchenpfanne mit Gemüse", 31], ["zweimal essen", 31], ["StartseiteErnährungRezepteHähnchenpfanne mit Gemüse", 31], ["gesunden Gericht", 31], ["Zubereitung Hähnchenpfanne", 31], ["Gemüse Zutaten", 31], ["zweimal essen Folge", 31], ["Gericht mit Geflügel", 31]],
+        "description": "gesundes Essen",
+        "slope": 0.00102579
+    },
+    "42": {
+        "data": [["Nasendusche", 59], ["Nase", 59], ["Emser Nasendusche angepasst", 59], ["Nasenspülsalz", 59], ["Portionsbeutel Emser Nasenspülsalz", 59], ["anderem Niesattacken verursachen", 59], ["besondere Salz Folge", 59], ["Luft Pollenallergiker", 59], ["Emser Nasenspülsalz", 59], ["Emser", 59]],
+        "description": "Nase",
+        "slope": 0.000929634
+    },
+    "43": {
+        "data": [["zweimal essen Gefüllte", 59], ["essen Gefüllte Kartoffelhälften", 59], ["zweimal essen Wrap", 59], ["zweimal essen Nudelsalat", 59], ["Tomatensoße Kartoffeltortilla Hähnchenpfanne", 59], ["zweimal essen Zutaten", 59], ["Hähnchenpfanne Pfannkuchen Folge", 59], ["Kartoffeltortilla Hähnchenpfanne Pfannkuchen", 59], ["Gefüllte Kartoffelhälften Zutaten", 59], ["essen Nudelsalat Zutaten", 59]],
+        "description": "zweimal essen Gefüllte",
+        "slope": 0.000929634
+    },
+    "44": {
+        "data": [["vegetarische Frühlingsrezepte", 59], ["vegetarische Frühlingsrezepte zusammengestellt", 59], ["vegetarische Frühlingsrezepte Erdbeer-Trifle", 59], ["Erdbeer-Trifle Türkische Spinat-Eier", 59], ["Türkische Spinat-Eier Kichererbsen-Salat", 59], ["Frühlingsrezepte Erdbeer-Trifle Türkische", 59], ["Kohlrabicremesuppe Iss bunt", 59], ["Kohlrabicremesuppe Iss", 59], ["Iss bunt", 58], ["Frühlingsrezepte zusammengestellt", 58]],
+        "description": "vegetarische Frühlingsrezepte",
+        "slope": 0.000929634
+    },
+    "33": {
+        "data": [["Bärlauch sammeln", 88], ["Vorsicht Verwechslungsgefahr", 88], ["Blätter Bärlauch kaufen", 44], ["StartseiteNewsBärlauch sammeln", 44], ["Blätter", 44], ["Verräterische Blätter Bärlauch", 44], ["Bärlauch", 44], ["Geruchstest Verräterische Blätter", 44]],
+        "description": "Bärlauch sammeln",
+        "slope": 0.000793669
+    },
+    "28": {
+        "data": [["Melatonin bekämpfen", 96], ["Warentest", 48], ["Melatonin versprechen", 48], ["Stiftung", 48], ["Melatonin", 48], ["Inhaltsstoff Melatonin", 48], ["Inhaltsstoff Melatonin versprechen", 48], ["Stiftung Warentest", 48], ["Schlaf", 48]],
+        "description": "Melatonin bekämpfen",
+        "slope": 0.000791472
+    },
+    "38": {
+        "data": [["Sport", 66], ["Beste Uhrzeit", 40], ["Uhrzeit andere Vorteile", 40], ["Vorteile Beste", 40], ["Biorhythmus Sport", 40], ["Abnehmen Folge", 40], ["Sport Studie", 40], ["Vorteile Beste Uhrzeit", 40], ["Lerche oder Nachtigall", 40], ["Sport Lerche", 40], ["mentale Gesundheit wackelt", 26], ["mentale Gesundheit", 26], ["Mentale Gesundheit", 26], ["StartseiteNewsMentale Gesundheit", 26], ["mentale Gesundheit verbessern", 26], ["mentale Gesundheit deutlich", 26], ["Musik tut", 26], ["Musik", 26]],
+        "description": "Sport",
+        "slope": 0.000724056
+    },
+    "53": {
+        "data": [["nuklearen Verseuchung", 48], ["Deutschland kennen Jodtabletten", 48], ["Schilddrüse", 48], ["Millionen hochdosierte Jodtabletten", 48], ["radioaktives Jod", 48], ["hochdosiertes Jod", 48], ["StartseiteNewsHochdosierte Jodtabletten", 48], ["Jodtabletten", 48], ["Jod", 48], ["hochdosierte Jodtabletten", 48]],
+        "description": "nuklearen Verseuchung",
+        "slope": 0.000712391
+    },
+    "6": {
+        "data": [["Impfungen trotz Corona", 266], ["trotz Corona wahrnehmen", 266], ["wichtig Impfungen schützen", 133], ["StartseiteNewsWichtige Impfungen trotz", 133], ["Corona wahrnehmen Schutzimpfungen", 133], ["Impfungen schützen Folge", 133], ["Corona wahrnehmen Impfungen", 133], ["Wichtige Impfungen trotz", 133]],
+        "description": "Impfungen trotz Corona",
+        "slope": 0.000700061
+    },
+    "7": {
+        "data": [["Ängste überwinden", 266], ["Yoga", 133], ["bestimmte Ängste überwinden", 133], ["Yoga Bestimmte Übungen", 133], ["Angststörungen", 133], ["Übungen", 133], ["Psychotherapie Wie entstehen", 133], ["Yoga Angststörungen nehmen", 133], ["Alternative zur Psychotherapie", 133]],
+        "description": "Ängste überwinden",
+        "slope": 0.000700061
+    },
+    "19": {
+        "data": [["richtige Zahnpflege", 133], ["Ernährung Folge", 133], ["Risiko für Vorhofflimmern", 133], ["Vorhofflimmern und Herzinsuffizienz", 133], ["StartseiteNewsZähneputzen beugt Krankheiten", 133], ["Zähneputzen beugt Krankheiten", 133], ["Herz schützen Risiko", 133], ["gesunde Ernährung Folge", 133], ["Zahngesundheit Gesunde Zähne", 133], ["Regelmäßiges Zähneputzen beugt", 133]],
+        "description": "richtige Zahnpflege",
+        "slope": 0.000700061
+    },
+    "20": {
+        "data": [["Corona Ein entzündetes", 133], ["stark gegen Corona", 133], ["Besuch kommt Folge", 133], ["Immunabwehr Weniger Komplikationen", 133], ["orale Prävention DMS", 133], ["Prävention DMS", 133], ["entzündetes Zahnfleisch erleichtert", 133], ["Coronaviren den Eintritt", 133], ["Zahnfleisch erleichtert Coronaviren", 133], ["Corona Im Mund", 133]],
+        "description": "Corona Ein entzündetes",
+        "slope": 0.000700061
+    },
+    "26": {
+        "data": [["Psychische Probleme", 104], ["Krise Psychische", 52], ["Krise Psychische Probleme", 52], ["Kindern und Jugendlichen", 52], ["begleiten Psychische", 52], ["Probleme in Zeiten", 52], ["Psychische Probleme nehmen", 52], ["begleiten Psychische Probleme", 52], ["Probleme", 47], ["Mögliche psychische Probleme", 5]],
+        "description": "Psychische Probleme",
+        "slope": 0.000672908
+    },
+    "47": {
+        "data": [["Pulpe der Kaffeekirsche", 55], ["Novel Food", 55], ["Pulpe", 55], ["Aroma von Kaffeekirschen", 55], ["Früchte der Kaffeepflanze", 55], ["StartseiteNewsKaffeekirschen zählen", 55], ["Lebensmitteln das gewisse", 55], ["unseren Lebensmitteln", 55], ["Kaffeekirschen unseren Lebensmitteln", 55], ["gewisse Etwas geben", 55]],
+        "description": "Pulpe der Kaffeekirsche",
+        "slope": 0.000632833
+    },
+    "34": {
+        "data": [["Wasser", 87], ["isst", 59], ["Prinzip", 59], ["Essensphasen und Fastenzeiten", 59], ["Wasser und ungesüßter", 59], ["Wohlfühlen und Abnehmen", 59], ["Stunden", 59], ["Essensphasen", 59], ["Intervallfasten", 59], ["Fastenzeiten", 59], ["Eisbaden", 56], ["hart gesottene Winterschwimmerinnen", 28], ["Jung und Alt", 28], ["See", 28], ["Medien fleißig Fotos", 28], ["gesottene Winterschwimmerinnen", 28], ["Winter", 28], ["frostige Wasser", 28]],
+        "description": "Wasser",
+        "slope": 0.000615415
+    },
+    "45": {
+        "data": [["Beziehungen", 57], ["Beziehungen können krank", 57], ["Toxische Beziehung", 57], ["Partner", 57], ["Coronatest Toxische Beziehung", 57], ["krank machen Eigentlich", 57], ["Partnerschaft im Coronatest", 57], ["Klaus-Dirk Kampz", 57], ["Geborgenheit vermitteln", 57], ["Kraft geben", 57]],
+        "description": "Beziehungen",
+        "slope": 0.000535515
+    },
+    "16": {
+        "data": [["richtigen Ausrüstung", 150], ["Ausrüstung ins Gelände", 149], ["Arzberger", 75], ["Gelände unterwegs", 75], ["unterwegs", 75], ["Gelände", 75], ["Bike", 75], ["Ausrüstung", 74]],
+        "description": "richtigen Ausrüstung",
+        "slope": 0.000514629
+    },
+    "15": {
+        "data": [["Studie", 173], ["Prozent der Befragten", 161], ["Prozent", 139], ["Zahnarzt", 133], ["Vorsorgeuntersuchungen", 133], ["Vorsorge", 133], ["Vorsorgeuntersuchung", 133], ["Deutschland notwendige Arztbesuche", 133], ["Früherkennung sind wichtig", 133], ["Zahnarzt zählt Folge", 133], ["aufschieben Vorsorgeuntersuchung", 133], ["Vorsorgeuntersuchung und Früherkennung", 133], ["Corona", 91], ["Weihnachten", 62], ["Vorsätze", 50], ["Auswirkungen Corona", 36], ["Corona lässt Gehirn", 36], ["Corona lässt", 36], ["Gehirn Britische Neurowissenschaftlerinnen", 36], ["Britische Neurowissenschaftlerinnen", 36], ["Gehirn Britische", 36], ["verändert das Gehirn", 36], ["Corona verändert", 36], ["Folgen Hirnschäden", 36], ["Psychologe Cliff Arnall", 34], ["Montag", 34], ["Psychologe Cliff", 34], ["Silvester", 34], ["britische Psychologe Cliff", 34], ["Cliff Arnall", 34], ["Januar", 34], ["guten Vorsätze", 34], ["Tiefpunkt nach Weihnachten", 34], ["Weihnachtsstimmung zum Fenster", 28], ["normales Weihnachten", 28], ["Minuten die Weihnachtsstimmung", 28], ["StartseiteNewsWeihnachten", 28], ["Viertel der Befragten", 28], ["Befragten", 28], ["guten Beifahrer", 25], ["schlimmsten Beifahrer", 25], ["Fahrer", 25], ["Beifahrer", 25], ["StartseiteNewsDie schlimmsten", 25], ["Sekunde Ablenkung Folge", 25], ["reden von Fahrerin", 25], ["Schall und Rauch", 25], ["StartseiteNewsGute Vorsätze", 25], ["ändern Gute Vorsätze", 25], ["Vorsätze waren gestern", 25], ["Rauch", 25], ["Fahrzeug lenken", 25], ["StartseiteNewsDie schlimmsten Beifahrer", 25], ["begleiten den Jahresanfang", 25], ["Vorsätze begleiten", 24], ["psychischen Erkrankungen", 22], ["Erkrankungen", 22], ["Generation", 21], ["Generation Boomer", 21], ["höheres Risiko", 21], ["englischen Studie", 20], ["Teilnehmer", 20], ["Bluthochdruck", 20]],
+        "description": "Studie",
+        "slope": 0.000511982
+    },
+    "18": {
+        "data": [["Diabetes Typ", 141], ["Diabetes", 86], ["Diabetes bei Kindern", 58], ["Diagnose Diabetes Typ", 56], ["Diabetes Kinder", 56], ["Kinder zuckerkrank", 56], ["Seltenheit Studie", 56], ["Pandemie Kinder zuckerkrank", 56], ["Pandemie Kinder", 56], ["Deutscher Diabetes Gesellschaft", 29], ["Kindern Gesünder leben", 29], ["trinken und ständig", 29], ["erkennen Viel trinken", 29], ["Diabetes mellitus Typ", 29], ["ständig zur Toilette", 29]],
+        "description": "Diabetes Typ",
+        "slope": 0.000458901
+    },
+    "23": {
+        "data": [["Schwangerschaft", 253], ["Schwangerschaftsdiabetes", 218], ["Geburt", 173], ["Tina Grüter", 173], ["Rezepte für kalte", 108], ["Eiweiß", 107], ["Diagnose bedeutet Plötzlich", 89], ["Plötzlich zuckerkrank Schwangerschaftsdiabetes", 89], ["bedeutet Plötzlich zuckerkrank", 89], ["Betreuung Insulinpflichtiger Schwangerschaftsdiabetes", 89], ["Insulinpflichtiger Schwangerschaftsdiabetes Symptome", 89], ["Schwangerschaftsdiabetes Leckere Rezepte", 89], ["bedeutet Inhaltsverzeichnis", 84], ["werdende Mamas erstmal", 84], ["Diagnose bedeutet Inhaltsverzeichnis", 84], ["Grüter", 84], ["werdende Mamas", 84], ["Lauch-Quiche Erbsensuppe", 54], ["kalte Tage Möhrensuppe", 54], ["Feta Folge", 54], ["Erbsensuppe mit Feta", 54], ["Möhrensuppe mit Klößchen", 54], ["Kartoffel-Kräutersuppe Lauch-Quiche Erbsensuppe", 54], ["Folge uns Rezepte", 54], ["Glykämischer Index Nährstoffbedarf", 45], ["Fett", 45], ["Fragen", 45], ["Kohlenhydrate", 45], ["Portion", 45], ["StartseiteErnährungGesund essenErnährung", 45], ["MinutenPro Portion", 45], ["Diagnose Gestationsdiabetes", 45], ["Schwangerschaft Schwangerschaft", 40], ["Übergewicht", 40], ["starkes Übergewicht", 40], ["Schwangere sind übergewichtig", 40], ["übergewichtig Risikofaktor", 40], ["übergewichtig Risikofaktor Übergewicht", 40], ["Risikofaktor Übergewicht", 40], ["Klimaküche Leckeres", 8], ["Nachhaltiges Weihnachtsessen Klimaküche", 8], ["Klimaküche Leckeres Weihnachtsessen", 8], ["Weihnachtsessen Klimaküche Leckeres", 8], ["Weihnachtsessen Heiligabend rückt", 8], ["StartseiteErnährungRezepteNachhaltiges Weihnachtsessen Heiligabend", 8], ["Heiligabend rückt näher", 8], ["Heiligabend rückt", 8], ["Weihnachtsessen Heiligabend", 8]],
+        "description": "Schwangerschaft",
+        "slope": 0.000436067
+    },
+    "24": {
+        "data": [["junge Erwachsene", 106], ["Wissen für junge", 106], ["junge Erwachsene Wieso", 53], ["zutiefst einschneidendes Erlebnis", 53], ["einschneidendes Erlebnis", 53], ["Erwachsene Wieso", 53], ["Krebs", 53], ["Jung", 53]],
+        "description": "junge Erwachsene",
+        "slope": 0.000429649
+    },
+    "5": {
+        "data": [["Starte rechtzeitig", 290], ["Schritt", 145], ["Chirurgischer Eingriff", 145], ["Eingriff Schritt", 145], ["Starte", 145], ["Volkskrankheit Parodontitis Parodontitis-Behandlung", 145], ["Befund feststellen Schritt", 145], ["Antiinfektiöse Therapie Schritt", 145], ["Chirurgischer Eingriff Schritt", 145]],
+        "description": "Starte rechtzeitig",
+        "slope": 0.000381837
+    },
+    "31": {
+        "data": [["Haut", 89], ["Hautreizungen keine Chance", 60], ["Frühling wichtig", 59], ["StartseiteMedizinKörperWarum Sonnenschutz", 59], ["Sonne scheint", 59], ["Frühlingssonne nicht unterschätzen", 59], ["wichtig ist Frühlingssonne", 59], ["Sonne", 59], ["Frühling", 59], ["Sonnenschutz im Frühling", 59], ["Sonnenschutz", 59], ["Pickel und Hautreizungen", 30], ["Hautprobleme durch Mund", 30], ["unserem täglichen Begleiter", 30], ["täglichen Begleiter", 30], ["Nasenschutz Wie entsteht", 30], ["Chance Hautprobleme", 30], ["unserem täglichen", 30]],
+        "description": "Haut",
+        "slope": 0.00037352
+    },
+    "70": {
+        "data": [["genaue Diagnose", 15], ["erklärt", 15], ["Gelenks", 15], ["Bandscheibenvorfall ähneln", 15], ["unteren Rücken Wofür", 15], ["Schmerzen", 15], ["ISG", 15], ["Iliosakralgelenk", 15], ["Michael Schaefer", 15], ["Gelenk", 15]],
+        "description": "genaue Diagnose",
+        "slope": 0.000361558
+    },
+    "50": {
+        "data": [["Halbjahreszeugnis Zusätzliche", 50], ["Stressfaktor Halbjahreszeugnis", 50], ["Zeugnisstress Stressfaktor", 50], ["Schülerinnen und Schüler", 50], ["Stress wegen Zeugnissen", 50], ["Bundeskonferenz für Erziehungsberatung", 50], ["StartseiteNewsDie bke-Jugendberatung hilft", 50], ["Halbjahreszeugnis Zusätzliche Belastung", 50], ["Stressfaktor Halbjahreszeugnis Zusätzliche", 50], ["Zeugnisstress Stressfaktor Halbjahreszeugnis", 50]],
+        "description": "Halbjahreszeugnis Zusätzliche",
+        "slope": 0.000330934
+    },
+    "22": {
+        "data": [["Rudern Drücken Seitheben", 117], ["Ausfallschritt Brücke", 117], ["Seitheben Ausfallschritt", 117], ["Drücken Seitheben", 117], ["Rudern Drücken", 117], ["Umsteiger Folge", 117], ["Ausfallschritt Brücke Hanteltraining", 117], ["Folge uns Rudern", 117], ["Drücken Seitheben Ausfallschritt", 117], ["Seitheben Ausfallschritt Brücke", 117]],
+        "description": "Rudern Drücken Seitheben",
+        "slope": 0.000284529
+    },
+    "68": {
+        "data": [["Kindern", 22], ["Hepatitis", 11], ["Kindern Hepatitis Hepatitis", 11], ["Health Security Agency", 11], ["Adenoviren", 11], ["Leberentzündung", 11], ["betroffenen Kindern", 11], ["StartseiteNewsHepatitis-Fälle bei Kindern", 11], ["Hepatitis-Fälle bei Kindern", 11]],
+        "description": "Kindern",
+        "slope": 0.000284199
+    },
+    "25": {
+        "data": [["Doris Wolf", 127], ["Angst", 104], ["Kontrolle Angst gehört", 73], ["Doris", 73], ["Folge uns Buchtipp", 73], ["Ängste verstehen", 73], ["passiert im Körper", 58], ["Kontrolle Angst", 58], ["Wolf", 58], ["Leben", 58], ["Corona Einsamkeit überwinden", 54], ["hilft Einsamkeit kennt", 54], ["überwinden Einsamkeit überwinden", 54], ["Einsamkeit überwinden", 54], ["Strategien Interview", 54], ["Corona Einsamkeit", 54], ["krank macht Buchtipp", 54], ["kennt jeder Veränderungen", 54], ["Einsamkeit überwinden Einsamkeit", 54], ["haarige Beine", 31], ["hilft Studie", 31], ["belegt Wirksamkeit", 31], ["heilen Spinnenangst", 31], ["Studie belegt", 31], ["Spinnen", 31], ["Spinnen menschliche Behausungen", 31], ["Studie belegt Wirksamkeit", 31], ["hilft Studie belegt", 31], ["Job und Gesundheit", 15], ["Kontrolle Sorge", 15], ["Sorge um Job", 15], ["reagiert der Körper", 15]],
+        "description": "Doris Wolf",
+        "slope": 0.000272484
+    },
+    "55": {
+        "data": [["Deuschland Gesellschaftsdroge Alkohol", 44], ["Alkohol auszukommen", 44], ["Litern pro Kopf", 44], ["Litern Bier", 44], ["Insel gehört Alkohol", 44], ["Alkohol pro Kopf", 44], ["bringt ein Monat", 44], ["Dry January", 44], ["Alkohol", 44], ["Litern", 44]],
+        "description": "Deuschland Gesellschaftsdroge Alkohol",
+        "slope": 0.000234082
+    },
+    "8": {
+        "data": [["Nacken", 225], ["Schreibtisch arbeitet", 173], ["konzentriert am Schreibtisch", 173], ["Schmerzen schnell", 173], ["sticht und zieht", 173], ["schnell zu spüren", 173], ["Nacken brennt", 173], ["Hand", 173], ["Nackenverspannungen Folge", 172], ["Übungen die helfen", 172], ["Schmerzen von Kopf", 52], ["David-Christopher Kubosch", 52], ["Schultern streiken", 52], ["David-Christopher", 52], ["Kubosch", 52], ["Schulter Kopfschmerzen", 52], ["Nacken und Schultern", 52], ["Kopf bis Schulter", 52], ["Schultern", 52]],
+        "description": "Nacken",
+        "slope": 0.000192678
+    },
+    "72": {
+        "data": [["StartseiteNewsLebensmittel retten beginnt", 6], ["Lebensmittelabfälle in privaten", 6], ["beginnt beim Einkauf", 6], ["Deutschland rettet", 6], ["Lebensmittel retten", 6], ["Lebensmittel retten beginnt", 6], ["Einkauf Lebensmittelabfälle", 6], ["Citizen Science", 6], ["Deutschland rettet Lebensmittel", 6], ["privaten Haushalten", 6]],
+        "description": "StartseiteNewsLebensmittel retten beginnt",
+        "slope": 0.000179992
+    },
+    "74": {
+        "data": [["Anatomie Kontrollorgan", 2], ["Blase Symptome", 2], ["Kontrollorgan Blase", 2], ["Frage der Anatomie", 2], ["verursacht Eine Frage", 2], ["Nebensache der Welt", 2], ["Kontrollorgan Blase Symptome", 2], ["Anatomie Kontrollorgan Blase", 2], ["schönste Nebensache", 2], ["Blase", 2]],
+        "description": "Anatomie Kontrollorgan",
+        "slope": 6.36605e-05
+    },
+    "67": {
+        "data": [["Lass die Augen", 22], ["Frauen Zusammenhang", 22], ["Gesundheit von Frauen", 22], ["Studie zur Gesundheit", 22], ["mittleren Lebensalter gehören", 22], ["Anzeichen einer Depression", 22], ["depressiv machen Studie", 22], ["Studie legt nahe", 22], ["mittleren Lebensalter", 22], ["US-amerikanische Studie legt", 22]],
+        "description": "Lass die Augen",
+        "slope": -2.86354e-05
+    },
+    "11": {
+        "data": [["Knie", 337], ["Bein", 337], ["Hause", 190], ["Rücken", 182], ["Tipps und Infos", 173], ["Infos", 173], ["Beauty Maskne", 173], ["Haarpflege", 173], ["hilft gegen Pickel", 173], ["unseren täglichen Begleitern", 173], ["Kosmetik und Wellness", 173], ["Infos zur Haut", 173], ["Professor Ostermeier", 173], ["knacken", 173], ["Knie knacken", 173], ["Ostermeier", 173], ["Schmerzen hast.Unsere Knie", 173], ["Professor", 173], ["Knacken Vorboten", 173], ["StartseiteWohlbefindenBeauty Sich wohlfühlen", 172], ["knirschen Kennst", 172], ["Position", 165], ["Arme und Beine", 165], ["Beinübung", 165], ["Boden", 165], ["Beine", 165], ["Beine trainieren", 164], ["Arme", 164], ["Fakten Folge", 17], ["unbedingt ins Fitnessstudio", 17], ["Einfache Hantelübungen", 17], ["daheim Zahlen", 17], ["Hantelübungen für daheim", 17], ["Hanteltraining", 17], ["Fitnessstudio", 17], ["Trainiert Rücken Schultern", 17]],
+        "description": "Knie",
+        "slope": -5.62105e-05
+    },
+    "73": {
+        "data": [["Sprachliche Stolperfallen", 3], ["Textnachrichten Manche Fehler", 3], ["Schultexte und Textnachrichten", 3], ["Kommunikation Schultexte", 3], ["gelungene Kommunikation Jugendliche", 3], ["Textmessenger auszutauschen", 3], ["gelungene Kommunikation Schultexte", 3], ["Sprachliche Stolperfallen Schau", 3], ["Zwinkersmiley Sprachliche Stolperfallen", 3], ["Zwinkersmiley Sprachliche", 3]],
+        "description": "Sprachliche Stolperfallen",
+        "slope": -8.24176e-05
+    },
+    "27": {
+        "data": [["Kinder", 100], ["stärker als Stubenhocker", 28], ["Kinder glücklich Kinder", 28], ["Komm mal runter", 28], ["verhaltensauffällig und emotional", 28], ["emotional stärker", 28], ["Angst und Depressionen", 28], ["Depressionen Wohlhabende", 28], ["frischen Luft", 28], ["Kinder glücklich", 28], ["braucht", 16], ["tolle Kinderspiele", 16], ["StartseiteFamilieFamilienlebenMacht", 16], ["JahrenFür", 16], ["Decke", 16], ["Buch", 16], ["Kinderspiele", 16], ["Start", 16], ["draußen Langeweile", 15]],
+        "description": "Kinder",
+        "slope": -9.0468e-05
+    },
+    "65": {
+        "data": [["StartseiteNewsImpfstatus punktet", 25], ["Partnerwahl In Zeiten", 25], ["Corona zu Folge", 25], ["Partnerwahl Zeig", 25], ["Impfpass Keine Kategorie", 25], ["einführen Einsamkeit nimmt", 25], ["neuer Datingfaktor", 25], ["Impfstatus einführen Einsamkeit", 25], ["Kategorie Impfstatus einführen", 25], ["Zeiten von Corona", 25]],
+        "description": "StartseiteNewsImpfstatus punktet",
+        "slope": -9.35374e-05
+    },
+    "66": {
+        "data": [["Einschlafen Folge", 23], ["Folge uns Schlaflänge", 23], ["Zeiten Ängste", 23], ["Zeiten Eine erholsame", 23], ["Ruckzuck einschlafen", 23], ["Schlaf hält fit", 23], ["gesund Ruckzuck einschlafen", 23], ["Zeiten Ängste rauben", 23], ["unruhigen Zeiten Ängste", 23], ["unruhigen Zeiten", 23]],
+        "description": "Einschlafen Folge",
+        "slope": -0.000107855
+    },
+    "62": {
+        "data": [["Engagement Anderen helfen", 29], ["Weihnacht Anderen helfen", 29], ["Gesundheit Helfen", 29], ["glücklich Freiwilliges", 29], ["helfen", 29], ["stärkt die Gesundheit", 29], ["Freiwilliges Engagement", 29], ["Geist der Weihnacht", 29], ["glücklich Freiwilliges Engagement", 29], ["gesund Vom Geist", 29]],
+        "description": "Engagement Anderen helfen",
+        "slope": -0.000141785
+    },
+    "37": {
+        "data": [["Cremige Kartoffelsuppe", 68], ["Nudeln mit Kürbissoße", 68], ["Zimt Nudeln", 68], ["Beeren Cremige", 68], ["Beeren Cremige Kartoffelsuppe", 68], ["Pro Portion", 68], ["Cremige Kartoffelsuppe Apfel-Pancakes", 68], ["Spanische Paella Folge", 68], ["Kürbissoße Spanische Paella", 68], ["Milchreis mit Beeren", 68]],
+        "description": "Cremige Kartoffelsuppe",
+        "slope": -0.000150784
+    },
+    "52": {
+        "data": [["Planetary Health Diet", 48], ["Health Diet", 48], ["StartseiteNewsPlanetary Health Diet", 24], ["Planetary Health", 24], ["sogenannte Planetary Health", 24], ["Welt retten", 24], ["StartseiteNewsPlanetary Health", 24], ["Health", 24]],
+        "description": "Planetary Health Diet",
+        "slope": -0.000163503
+    },
+    "12": {
+        "data": [["Einsamkeit Folge", 173], ["Tipps gegen Schlafstörungen", 173], ["Entspannung Homeoffice", 173], ["Marotte Konzentriert", 173], ["Psyche Zwangsstörungen", 173], ["Marotte Konzentriert arbeiten", 173], ["Psyche kümmert", 172], ["Kontrolle Tipps", 115], ["Arbeitsalltag Angst", 115], ["Arbeitsalltag Angst überwinden", 115], ["Konzentriert arbeiten", 59], ["Scheißangst Tipps", 58], ["Arbeitsalltag Diese Scheißangst", 58]],
+        "description": "Einsamkeit Folge",
+        "slope": -0.00019227
+    },
+    "13": {
+        "data": [["Schnell mal locker", 173], ["krank Stress abbauen", 173], ["abschalten Warm baden", 172], ["Aktiv abschalten Warm", 172], ["Lesen Entspannungstechniken lernen", 172], ["Entspannungstechniken lernen Blitzentspannung", 172], ["wegatmen Verspannungen wegmassieren", 172], ["einfach wegatmen Verspannungen", 172], ["Warm baden Anspannung", 172], ["draußen Lesen Entspannungstechniken", 172]],
+        "description": "Schnell mal locker",
+        "slope": -0.00019227
+    },
+    "14": {
+        "data": [["technische Daten etc.", 173], ["technische Daten", 173], ["Daten etc.", 173], ["aktuellen Preisliste", 173], ["Werbegeschäft in Online-MedienSie", 172], ["individuelles Angebot", 172], ["StartseiteMediadaten Informationen", 172], ["Preise Allgemeine", 172], ["Allgemeine Geschäftsbedingungen", 172], ["Preise Allgemeine Geschäftsbedingungen", 172]],
+        "description": "technische Daten etc.",
+        "slope": -0.00019227
+    },
+    "64": {
+        "data": [["Weihnachten Folge", 28], ["Weihnachtsbaum Schöne Weihnachten", 28], ["Schöne Weihnachten Folge", 28], ["ökologischem Waldbau Rent", 28], ["Feiern ohne Weihnachtsbaum", 28], ["Robin Wood", 28], ["Waldbau Rent", 28], ["Rent a Weihnachtsbaum", 28], ["Weihnachtsbaum Schöne", 28], ["Schöne Weihnachten", 28]],
+        "description": "Weihnachten Folge",
+        "slope": -0.000239259
+    },
+    "48": {
+        "data": [["Beleidigungen im Netz", 54], ["Hassbotschaften und Verschwörungstheorien", 27], ["täglich online Smart-Speaker", 27], ["Ton im Netz", 27], ["Stunden täglich online", 27], ["Jüngere häufiger betroffen", 27], ["liest Bücher Freunde", 27], ["Verschwörungstheorien Jüngere häufiger", 27], ["Kurs JIM-Studie Folge", 27]],
+        "description": "Beleidigungen im Netz",
+        "slope": -0.000266712
+    },
+    "3": {
+        "data": [["Mental Load", 406], ["unsichtbare Arbeit stresst", 406], ["Diagnose Schwangerschaftsdiabetes", 346], ["Schöne Ferien", 346], ["Hilfsmittel Mental Load", 346], ["Hormone und Hilfsmittel", 330], ["Frauen", 325], ["Verhütung ohne Hormone", 262], ["kleinstem Raum Schöne", 173], ["ums Thema Schwangerschaft", 173], ["Schwangerschaft und Geburt", 173], ["Schwangerschaftsdiabetes Schwangerschaftsgymnastik", 173], ["Geburt Diagnose", 173], ["Diagnose Schwangerschaftsdiabetes Schwangerschaftsgymnastik", 173], ["Geburt Diagnose Schwangerschaftsdiabetes", 173], ["Corona Kinderspiele", 173], ["Kids im Netz", 173], ["Sicherheit für Kids", 173], ["Netz Fünf Gründe", 173], ["draußen Schwimmen lernen", 173], ["Raum Schöne Ferien", 173], ["Medien und Corona", 173], ["Hause Folge", 173], ["Leben lang zusammenbleiben", 173], ["Arbeit stresst Folge", 173], ["Schwangerschaftsdiabetes Fünf Gründe", 173], ["Arbeit stresst Schöne", 173], ["stresst Schöne Ferien", 173], ["Sexualität Verhütung", 173], ["Hilfsmittel Mental", 173], ["Familie Diagnose Schwangerschaftsdiabetes", 173], ["StartseiteFamilieSchwangerschaft und Geburt", 172], ["Geburt Schwanger", 172], ["StartseiteFamilieFamilienleben Das Familienleben", 172], ["StartseiteFamiliePartnerschaft und Sexualität", 172], ["Natürliche Verhütung", 157], ["natürliche Verhütungsmethode", 157], ["StartseiteFamiliePartnerschaft und SexualitätNatürliche", 157], ["Methode", 157], ["setzen stattdessen", 157], ["Verhütung", 157], ["natürliche", 157], ["Verhütungsmethoden beobachten Frauen", 157], ["StartseiteFamilie Gesundheit", 84], ["Patricia Cammarata", 60], ["Arbeit stresst Mental", 60], ["Load", 60], ["Mental", 60], ["Begriff Mental Load", 60], ["Thema Mental Load", 60], ["Bloggerin Patricia Cammarata", 60], ["stresst Mental Load", 59], ["Babys riechen", 48], ["Frauenprobleme lenken Spezielle", 32], ["lenken Spezielle Informationen", 32], ["wichtige Frauenprobleme lenken", 32], ["Frauenzeitschriften und Fachmagazine", 32], ["Spezielle Informationen", 32], ["schwanger sein Bikinimedizin", 32], ["Frau Folge", 32], ["Bikinimedizin Frauenzeitschriften", 32], ["Fachmagazine untersucht", 32], ["Vertrauen Frauen", 28], ["Eindruck entscheidet", 28], ["schafft Vertrauen", 28], ["ticken anders Folge", 28], ["Männer lassen", 28], ["entscheidet Attraktivität schafft", 28], ["Attraktivität schafft Vertrauen", 28], ["Eindruck entscheidet Attraktivität", 28], ["schafft Vertrauen Frauen", 28], ["Babys riechen toll", 24], ["StartseiteNewsBabys riechen toll", 24], ["Babys riechen Frauen", 24], ["riechen toll", 24], ["Frauen fühlen sofort", 24], ["riechen", 24], ["StartseiteNewsBabys riechen", 24]],
+        "description": "Mental Load",
+        "slope": -0.000269489
+    },
+    "71": {
+        "data": [["spezielles Beratungstelefon", 13], ["Folgen einer Corona-Infektion", 13], ["Verlust von Geruchs", 13], ["Corona-Lage Folge", 13], ["Long-COVID", 13], ["DAK Hotline", 13], ["Angebot der DAK", 13], ["Corona Neues Angebot", 13], ["Folgen von Corona", 13], ["Beratungstelefon der DAK-Gesundheit", 13]],
+        "description": "spezielles Beratungstelefon",
+        "slope": -0.000343407
+    },
+    "36": {
+        "data": [["Studie zeigt", 162], ["aktuelle Studie zeigt", 149], ["min.Eine aktuelle Studie", 143], ["min.Eine Studie zeigt", 129], ["zeigt", 123], ["aktuelle Studie", 91], ["Anrufe bei Sorgentelefonen", 77], ["Jugendliche unterstützen Kaffeekirschen", 63], ["min.Eine Studie", 45], ["frischen Bärlauch Melatonin", 44], ["aktuelle", 38], ["Linderung durch Foto", 32], ["Meldungen und News", 30], ["Heilmittel Schmerzen", 30], ["Bio-Lebensmittel wächst Frauengesundheit", 29], ["Studiendaten Folge", 27], ["Existenzielle Ängste", 27], ["Anrufe", 27], ["Themen beschäftigten", 27], ["Pandemie sorgt", 27], ["Sorgentelefonen", 27], ["Sorgentelefonen Andere Themen", 27], ["Drittel mehr Anrufe", 27], ["Partners Chlamydien", 25], ["Symptome und Behandlung", 25], ["mentale Gesundheit Appetit", 22], ["Bärlauch Melatonin", 22], ["Melatonin und Einschlafprobleme", 21], ["Einschlafprobleme Jodtabletten", 18], ["Foto des Partners", 18], ["toxischen Beziehungen", 16], ["Beziehung und Schwangerschaft", 16], ["Kurkuma kein Heilmittel", 16], ["Impfpässe Vorsicht", 14], ["heilbar Achtung gefälschte", 14], ["Achtung gefälschte Impfpässe", 14], ["gefälschte Impfpässe Vorsicht", 14], ["glücklich Rat gesucht", 12], ["Handtaschen Kurkuma", 10], ["min.Eine", 9], ["unterstützen Kaffeekirschen", 9], ["Händen Dein Stress", 7], ["wichtig Blutdruck senken", 7], ["News Vorlesestudie belegt", 7], ["Wochen alkoholfrei", 6], ["Ablenkungsfaktor Beifahrer", 6], ["Beifahrer Gute Vorsätze", 6], ["Eltern unterschiedlich Ablenkungsfaktor", 5], ["unterschiedlich Ablenkungsfaktor Beifahrer", 5], ["Hate Speech nehmen", 4], ["Fake News", 4], ["Hate Speech", 4], ["Bio-Weihnachtsbäume zum Fest", 4], ["News Männer lassen", 4], ["News Männer", 4], ["Sehstörungen depressiv", 4], ["Verseuchung vorsorglich einzunehmen", 4], ["atomaren Verseuchung vorsorglich", 4], ["News Citizen Science", 4], ["rauer Weihnachten", 4], ["News Blutdruck senken", 3], ["Infektionszahlen steigen Auffrischungsimpfungen", 3], ["Brennen im Intimbereich", 3], ["Juckreiz und Brennen", 3], ["Facetten.Die Infektionszahlen steigen", 3], ["News Rat gesucht", 3], ["Corona Kinder zuckerkrank", 3], ["vorbeugen Citizen Science", 2], ["News Vier Wochen", 2], ["Foto des Liebsten", 2], ["Facetten.Die Inzidenzen steigen", 2], ["News Weihnachten", 2], ["Kinder glücklich Rat", 2], ["News Machen Sehstörungen", 2], ["Sehstörungen können Depressionen", 2]],
+        "description": "Studie zeigt",
+        "slope": -0.000363913
+    },
+    "1": {
+        "data": [["Yoga gegen Angststörungen", 346], ["Sicher Schwimmen", 346], ["Schwimmen im Badesee", 346], ["Tricks für Einsteiger", 173], ["Angststörungen Sicher", 173], ["Themen Sport", 173], ["Badesee MTB", 173], ["Sport und Fitness", 173], ["Tipps und Tricks", 173], ["Entspannung Sicher", 173], ["Angststörungen Konzentriert", 173], ["Marotte Yoga", 173], ["Wohlbefinden Zwangsstörungen", 173], ["Angststörungen Konzentriert arbeiten", 173], ["Entspannung Sicher Schwimmen", 173], ["Angststörungen Sicher Schwimmen", 173], ["Beine Angst überwinden", 115], ["Badesee Fünf Übungen", 58]],
+        "description": "Yoga gegen Angststörungen",
+        "slope": -0.00038454
+    },
+    "2": {
+        "data": [["Abnehmen mit Genuss", 346], ["abnehmen", 346], ["Abnehmen", 173], ["grünen Bereich", 173], ["Monaten im Homeoffice", 173], ["BMI im grünen", 173], ["Genuss", 173], ["Trennkost oder Diäten", 173], ["Abnehmen mit Intervallfasten", 173], ["Jojo-Effekt Ohne Speckpolster", 173], ["Heißhunger und Jojo-Effekt", 173], ["Krise Abnehmen", 173], ["Intervallfasten Folge", 173], ["Genuss BMI", 173], ["StartseiteErnährungAbnehmen Gesund abnehmen", 172], ["Homeoffice diese Frage", 172], ["StartseiteErnährungAbnehmen Gesund", 172], ["StartseiteAnzeigeAbnehmen mit Genuss", 172]],
+        "description": "Abnehmen mit Genuss",
+        "slope": -0.00038454
+    },
+    "63": {
+        "data": [["Vorlesen Folge", 28], ["Bedürfnisse Kitapersonal", 28], ["Kitas Vorlesestudie", 28], ["Vorlesen erfüllt unterschiedliche", 28], ["Ritual in Kitas", 28], ["Bedürfnisse Kitapersonal ermuntert", 28], ["Kitapersonal ermuntert Eltern", 28], ["unterschiedliche Bedürfnisse Kitapersonal", 28], ["Vorlesetag Vorlesen erfüllt", 28], ["erfüllt unterschiedliche Bedürfnisse", 28]],
+        "description": "Vorlesen Folge",
+        "slope": -0.000399026
+    },
+    "69": {
+        "data": [["vierthäufigsten psychischen Erkrankungen", 16], ["Betroffenen", 16], ["Tick oder psychische", 16], ["Annabelle Starck", 16], ["psychische Erkrankung", 16], ["Gedanken", 16], ["Zwangsstörungen", 15], ["Psychologin Annabelle Starck", 15], ["Annabelle", 15], ["Starck", 15]],
+        "description": "vierthäufigsten psychischen Erkrankungen",
+        "slope": -0.000415005
+    },
+    "40": {
+        "data": [["Sport hilft", 60], ["Blutdruck senken", 30], ["Medikamente den Dienst", 30], ["Blutdrucksenken durch Ausdauersport", 30], ["diastolische Wert", 30], ["Wert", 30], ["systolische Wert", 30], ["Blutdruck", 30], ["mmHg", 30]],
+        "description": "Sport hilft",
+        "slope": -0.000452164
+    },
+    "58": {
+        "data": [["Kaffee trinken", 37], ["Kaffee", 19], ["senkt das Risiko", 19], ["trinken ohne Herzflattern", 19], ["Herz rast", 19], ["Kaffee trinken gesund", 19], ["Herzflattern Herzklopfen", 19], ["Kaffee Überraschung", 19], ["täglichen Tassen Kaffee", 18]],
+        "description": "Kaffee trinken",
+        "slope": -0.000485148
+    },
+    "49": {
+        "data": [["Handtaschen Rückenschmerzen verursachen", 53], ["Tipps Allheilmittel", 27], ["falsches Heben", 27], ["StartseiteNewsWenn Handtaschen Rückenschmerzen", 27], ["Allheilmittel Bewegung Folge", 27], ["betroffen Rückenschmerzen vermeiden", 27], ["Tipps Allheilmittel Bewegung", 27], ["Rückenschmerzen verursachen Handtaschen", 27], ["Rückenschmerzen verursachen Gründe", 26]],
+        "description": "Handtaschen Rückenschmerzen verursachen",
+        "slope": -0.000566201
+    },
+    "51": {
+        "data": [["dran am Hype", 49], ["Stress und Entzündungen", 25], ["Pulver zerstoßenen Grüntee", 25], ["Teepflanze Camellia sinensis", 24], ["Tee", 24], ["Pulver", 24], ["Hype", 24], ["Matcha", 24], ["grünen Tee", 24]],
+        "description": "dran am Hype",
+        "slope": -0.000616081
+    },
+    "41": {
+        "data": [["Händen abklären lassen", 59], ["Händen und Fingern", 32], ["abklären lassen Ursache", 30], ["Händen", 30], ["Karpaltunnelsyndrom Frauen", 30], ["Ursache Karpaltunnelsyndrom Frauen", 30], ["Karpaltunnelsyndrom Frauen trifft", 30], ["lassen Ursache Karpaltunnelsyndrom", 30], ["Bastian Marquaß", 29]],
+        "description": "Händen abklären lassen",
+        "slope": -0.000621875
+    },
+    "29": {
+        "data": [["gemeinsame Mittagessen", 91], ["Kita", 91], ["Kinder lieben Gewohnheiten", 91], ["Social Distancing", 91], ["StartseiteFamilieFamilienlebenFünf Gründe", 91], ["Gewohnheiten", 91], ["Corona und Social", 91], ["Rituale", 91], ["Social Distancing schmerzlich", 91], ["Distancing schmerzlich vermissen", 90]],
+        "description": "gemeinsame Mittagessen",
+        "slope": -0.000661301
+    },
+    "46": {
+        "data": [["Symptome erkennen", 56], ["miese Verräter", 28], ["richtige Therapie STI-Test", 28], ["STI-Test für Zuhause", 28], ["Therapie STI-Test", 28], ["behandeln Chlamydien", 28], ["richtige Therapie", 28], ["erkennen und behandeln", 27], ["Chlamydien", 27]],
+        "description": "Symptome erkennen",
+        "slope": -0.000679209
+    },
+    "61": {
+        "data": [["Alzheimer und Krebs", 31], ["Wundergewürz", 31], ["all diese Erkrankungen", 31], ["Erkrankungen nachgesagt", 31], ["Verbraucherzentrale NRW", 31], ["wahre Wunderwirkungen", 31], ["Wunderwirkungen gegen all", 31], ["Kurkuma", 30], ["Curcumin", 30], ["Nahrungsergänzungsmittel", 30]],
+        "description": "Alzheimer und Krebs",
+        "slope": -0.000689146
+    },
+    "9": {
+        "data": [["starke Abwehrkräfte", 196], ["Informationen weitergeben Antikörper", 98], ["Antikörper produzieren Gift", 98], ["Helfer alarmieren Informationen", 98], ["Eindringlinge verschlingen Helfer", 98], ["Krankheitserreger unseren Körper", 98], ["starkes Immunsystem", 98], ["Abwehrkräfte Wie funktioniert", 98], ["Tipps Folge", 98]],
+        "description": "starke Abwehrkräfte",
+        "slope": -0.000706899
+    },
+    "59": {
+        "data": [["Gruppe", 32], ["Stress ansteckend", 30], ["Universitäten Gießen", 28], ["Stresshormon Cortisol", 28], ["Teilnehmerinnen und Teilnehmer", 28], ["StartseiteNewsIst Stress", 28], ["Stress", 28], ["StartseiteNewsIst Stress ansteckend", 28], ["Wir-Gefühl", 28], ["ansteckend", 26], ["StartseiteNewsZu alt", 5], ["Tattoos", 5], ["Tattoos schön", 5], ["Welt zunehmender Beliebtheit", 5], ["Frage", 5], ["Tätowierungen", 5], ["persönlichen Geschmacks", 5], ["Frage der Sozialisation", 5], ["Tätowierungen ästhetisch", 5]],
+        "description": "Gruppe",
+        "slope": -0.00071147
+    },
+    "60": {
+        "data": [["Schmerzen Junge Frauen", 32], ["garantiert nebenwirkungsfreies Schmerzmittel", 32], ["Frauen getestet Beruhigender", 32], ["Prozent weniger Entspannung", 32], ["zählen hilft Foto", 32], ["nebenwirkungsfreies Schmerzmittel ausprobieren", 32], ["Beruhigender Einfluss", 32], ["Rückwärts zählen hilft", 32], ["Junge Frauen getestet", 32], ["getestet Beruhigender Einfluss", 32]],
+        "description": "Schmerzen Junge Frauen",
+        "slope": -0.000727724
+    },
+    "56": {
+        "data": [["Gründe für einheimische", 39], ["leckere Herbstrezepte", 39], ["Pflaumen-Crumble Apfelgrütze", 39], ["Herbstrezepte Tagliatelle", 39], ["leckere Herbstrezepte Tagliatelle", 39], ["Tagliatelle mit Pfifferlingen", 39], ["Apfelgrütze mit Zimtjoghurt", 39], ["leckere Herbstrezepte Herbstzeit", 38], ["Herbstzeit ist Erntezeit", 38], ["Herbstrezepte Herbstzeit", 38]],
+        "description": "Gründe für einheimische",
+        "slope": -0.000875608
+    },
+    "57": {
+        "data": [["Bakterien in Schach", 39], ["Pflege als Ratgeber", 39], ["Ratgeber zur Seite", 39], ["Hilfestellung für Betroffene", 39], ["Pandemie Desinfektionsmittel einfach", 39], ["Themengebiet der Pflege", 39], ["Viren und Bakterien", 39], ["Deutsche Pflegeallianz GmbH", 39], ["BSS Deutsche Pflegeallianz", 39], ["Händehygiene im Abo", 38]],
+        "description": "Bakterien in Schach",
+        "slope": -0.000875608
+    },
+    "35": {
+        "data": [["Kürbis bitter schmeckt", 79], ["Bitterstoffe", 30], ["schmeckt Giftige", 30], ["Bitterstoffe Wie gefährlich", 30], ["bittere Kürbisse", 30], ["bitter schmeckt Giftige", 30], ["Giftige Bitterstoffe", 30], ["schmeckt Giftige Bitterstoffe", 30], ["Kürbis bitter", 30]],
+        "description": "Kürbis bitter schmeckt",
+        "slope": -0.000951252
+    },
+    "39": {
+        "data": [["Impfpass", 65], ["gefälschter Impfpass", 49], ["StartseiteNewsGefälschter Impfpass", 49], ["Gefälschter Impfpass", 49], ["Berlins regierender Bürgermeister", 33], ["Gebrauch gefälschter Impfpässe", 33], ["regierender Bürgermeister Michael", 33], ["gefälschter Impfpass scheint", 33], ["gefälschter", 33], ["Bürgermeister Michael Müller", 33], ["gefälschten Impfpass organisiert", 16], ["persönliche Gründe", 16], ["impfen lassen", 16], ["lassen", 16], ["riskiert hohe Strafen", 15]],
+        "description": "Impfpass",
+        "slope": -0.000968132
+    },
+    "54": {
+        "data": [["Wichtige Mineralstoffe Sättigende", 46], ["Carotinoide Wichtige Mineralstoffe", 46], ["Kürbissoße Kürbiscurry Kürbisse", 46], ["Beliebte Kürbissorten", 46], ["Herbstklassiker Beliebte", 46], ["vielseitigen Herbstklassiker Beliebte", 46], ["Herbstklassiker Beliebte Kürbissorten", 46], ["Kürbis", 45], ["Butternut Muskatkürbis Bischofsmütze", 45], ["Schale", 45]],
+        "description": "Wichtige Mineralstoffe Sättigende",
+        "slope": -0.00097112
+    },
+    "0": {
+        "data": [["vegetarisch und klimafreundlich", 363], ["Vitamine und Mineralstoffe", 357], ["Eismaschine Mediterrane Küche", 346], ["Mediterrane Küche", 346], ["Corona und Lebensmittel", 346], ["starke Nerven Cocktails", 346], ["klimafreundlich Weihnachtsplätzchen", 242], ["Gesund essen", 219], ["Lebensmittel Vitamine", 173], ["essen Kürbis", 173], ["wichtigen Nährstoffen", 173], ["Überblick Gesund", 173], ["Lebensmitteln umgehen", 173], ["sinnvoll ist Wochenplan", 173], ["Nachhaltig genießen", 173], ["Umwelt", 173], ["Cocktails zum Selbermixen", 173], ["Frühling Sommerrezepte", 173], ["Gesund essen Kürbis", 173], ["Überblick Gesund essen", 173], ["Urlaub Limonade selber", 173], ["Selbermixen Wochenplan", 173], ["Intervallfasten Limonade selber", 173], ["Saison-Highlight Corona", 172], ["StartseiteErnährungNachhaltig genießen", 172], ["StartseiteErnährungRezepte Was koche", 127], ["nachhaltig essen bedeutet", 122], ["Nachhaltig genießen Weihnachtsessen", 121], ["genießen Weihnachtsessen", 121], ["Rezepte Weihnachtsessen", 121], ["Ernährung Weihnachtsessen", 121], ["Eismaschine Mediterrane", 98], ["klimafreundlich Lebensmittelvorräte", 63], ["klimafreundlich Lebensmittelvorrat", 58], ["Klima", 52], ["Lebensmitteln", 52], ["Nachhaltig genießen Lebensmittelvorräte", 52], ["genießen Lebensmittelvorräte", 52], ["einfach kochen Folge", 52], ["Frühling Corona", 46], ["Nerven Cocktails", 46], ["Urlaub Limonade", 46], ["Krankheiten Hildegard", 11], ["Hildegard von Bingen", 11], ["Heilkraft Urtica dioica", 11], ["voller Heilkraft Urtica", 11], ["voller Heilkraft Brennnessel", 11], ["Heilkraft Urtica", 11], ["Urtica dioica", 11], ["Unkraut schlechthin", 11], ["Schutz vor Krankheiten", 11], ["Ernährung Weihnachtsplätzchen", 6], ["Rezepte", 6], ["Trends und Diäten", 6], ["Rezepte Weihnachtsplätzchen", 6]],
+        "description": "vegetarisch und klimafreundlich",
+        "slope": -0.00106212
+    },
+    "17": {
+        "data": [["Impfstoff", 141], ["Grippe impfen lassen", 114], ["schwere Krankheitsverläufe", 114], ["Risiko einer Doppelinfektion", 114], ["Regine Heilbronn", 114], ["Risiko", 114], ["Grippeimpfung", 114], ["Impfung", 114], ["Gründe Experten empfehlen", 113], ["Doppelinfektion verringern", 99], ["Schutz gegen Corona", 27], ["Corona Booster-Impfungen", 27], ["bringt die Auffrischimpfung", 27], ["Johnson", 27], ["Thema in Deutschland", 27], ["Auffrischimpfung", 27], ["STIKO", 27], ["Auffrischimpfung gegen Corona", 27], ["Risiko einer Infektion", 15]],
+        "description": "Impfstoff",
+        "slope": -0.00143825
+    },
+    "10": {
+        "data": [["Gesundheit", 422], ["Fragen und Antworten", 346], ["Antworten zur Grippeimpfung", 346], ["Bad Homburg", 195], ["Bleib gesund", 194], ["Cookies", 174], ["Daten", 174], ["Website", 174], ["Amtsgericht Bad Homburg", 173], ["Bad Homburg HRB", 173], ["Impressum Folge", 173], ["Bad", 173], ["Amtsgericht Bad", 173], ["Dipl.", 173], ["Verarbeitung persönlicher Informationen", 173], ["Verarbeitung", 173], ["Verarbeitung personenbezogener Daten", 173], ["personenbezogenen Daten", 173], ["Google", 173], ["Google Ads", 173], ["Übermittlung personenbezogener Daten", 173], ["Wochen", 173], ["aktuellen medizinischen Themen", 173], ["Medizinwissen Fragen", 173], ["ums Impfen", 173], ["gehört rein Myth-Buster", 173], ["Selbstversuch Reiseapotheke", 173], ["Zecken Herdenimmunität", 173], ["Fakten und Neuigkeiten", 173], ["Medizin Fragen", 173], ["Kreidezähne bei Kindern", 173], ["Grippeimpfung Kreidezähne", 173], ["gehört rein", 173], ["Kindern Laktoseintoleranz", 173], ["Thema Gesundheit weiterhilft", 173], ["ums Thema Gesundheit", 173], ["Gesundheitsmagazin", 173], ["Thema Gesundheit", 173], ["Wochen und Monaten", 173], ["rein Alleskönner Vitamin", 173], ["Monaten", 173], ["Anbieterwdv Gesellschaft", 172], ["StartseiteImpressum Anbieterwdv", 172], ["StartseiteImpressum Anbieterwdv Gesellschaft", 172], ["StartseiteMedizin Gesundheit", 172], ["StartseiteMedizinMedizinwissen Egal", 172], ["Gesundheitsmagazin bleib gesund", 133], ["Adventskalender", 42], ["gesund", 42], ["Zahl der Neuinfektionen", 39], ["OHG", 22], ["StartseiteBleib gesund", 21], ["StartseiteBleib", 21], ["Bleib", 21], ["Seite", 2]],
+        "description": "Gesundheit",
+        "slope": -0.00170324
+    }
+}

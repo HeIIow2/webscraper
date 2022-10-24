@@ -27,7 +27,7 @@ DIAGRAM_FILE_SLOPES = "{magazine}_trend_{communities}_slopes.svg"
 MODULARITY_FILE = "{magazine}_modularity.csv"
 
 MAGAZINES = [
-    "cosmopolitan"
+    "bleib gesund"
 ]
 """
 MAGAZINES = [
@@ -48,8 +48,8 @@ RESET_KEYWORDS = False
 DATE_FORMAT = "%d.%m.%Y"
 
 # The number of days, which are summed up per measurement
-SUMMARIZED_DAYS = 1
-NUMBER_OF_COMMUNITIES = 4
+SUMMARIZED_DAYS = 7
+NUMBER_OF_COMMUNITIES = 10
 X_LABEL_TILT = 45
 
 OVERIDE_LABEL_DESCRIPTION = False
